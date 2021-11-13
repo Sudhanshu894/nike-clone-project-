@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout page</title>
+  <link rel="stylesheet" href="checkout.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+  <div id="top-bar-container">
+    <div id="top-bar">
+      <div>
+        <img src="image resources/icons8-air-jordan-50.png" alt="" />
+      </div>
+      <div>
+        <ul>
+          <li><a href="help.html">Help</a></li>
+          <li>|</li>
+          <li><a href="JoinusPage.html">Join Us</a></li>
+          <li>|</li>
+          <li><a href="Signin.html">Sign In</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav-bar -->
+
+  <nav>
+    <div id="nav-details">
+      <!-- nike logo -->
+      <div id="nav-logo">
+        <a href="home.html"><img src="image resources/nike.png" alt="logo" /></a>
+      </div>
+      <!-- nav links -->
+      <div id="nav-bar">
+        <ul>
+          <li><a href="Men.html">Men</a></li>
+          <li><a href="Women.html">Women</a></li>
+          <li><a href="kids.html">Kids</a></li>
+          <li><a href="Salespage.html">Sales</a></li>
+          <li><a href="Customize.html">Customize</a></li>
+          <li><a href="infeed.html">SNKRS</a></li>
+        </ul>
+      </div>
+      <!-- nav search button -->
+      <div id="nav-search">
+        <div id="search-bar" >
+          <form action="" id="input-search">
+            <span>
+              <button>
+                <img src="image resources/search.png" alt="" /></button>
+              </span>
+            <input onfocus="expand()" type="text" placeholder="Search" />
+          </form>
+          <button id="cross-btn" onclick="cross()"><i class="fa fa-times"></i></button>
+        </div>
+        <div id="fav-icon">
+          <a href="favpage.html"><img src="image resources/love.png" alt="" /></a>
+          <span id="FAV"></span>
+        </div>
+        <div id="cart-icon">
+          <a href="Addtocart.html"
+            ><img src="image resources/shopping-bag.png" alt=""
+          /></a>
+          <span id="CArt"></span>
+        </div>
+        <div id="search-icon">
+          <a href="#">
+            <img src="image resources/search.png" alt="" />
+          </a>
+        </div>
+        <div id="menu-bar-icon">
+          <div id="icon-div">
+            <img src="image resources/menu.png" alt="">
+          </div>
+        </div>
+      <div id="menu-items">
+        <div id="close-menu">
+          <img src="image resources/close 1.png" alt="">
+        </div>
+        <ul>
+          <li>
+            <span>Men</span>
+            <span><a href="Men.html"><img class="menu-imgs" src="image resources/arrow.png" alt=""></span></a>
+          </li>
+          <li>
+            <span>Women</span>
+            <span><a href="Women.html"><img class="menu-imgs" src="image resources/arrow.png" alt=""></span></a>
+          </li>
+          <li>
+            <span>Kids</span>
+            <span><a href="kids.html"><img class="menu-imgs" src="image resources/arrow.png" alt=""></span></a>
+          </li>
+          <li>
+            <span>Customize</span>
+            <span><a href="Customize.html"><img class="menu-imgs" src="image resources/arrow.png" alt=""></span></a>
+          </li>
+          <li>
+            <span>Sale</span>
+            <span><a href="Salespage.html"><img class="menu-imgs" src="image resources/arrow.png" alt=""></span></a>
+          </li>
+          <li>
+            SNKRS
+          </li>
+        </ul>
+        <div>
+          <span>
+            <img src="image resources/icons8-air-jordan-50.png" alt="">
+          </span>
+          <span>Jordan</span>
+        </div>
+        <div class="menu-signup">
+          <p>Become a Nike Member for the best products, inspiration and stories in sports. <span>Learn more</span></p>
+          <div>
+            <a href="JoinusPage.html"><button>Join Us</button></a>
+            <a href="Signin.html"><button>Sign In</button></a>
+          </div>
+        </div>
+        <div class="other-opt">
+          <div>
+            <span>
+              <img src="image resources/shopping-bag.png" alt="">
+            </span>
+              <span>Bag</span>
+          </div>
+          <div>
+            <span>
+              <img src="image resources/question.png" alt="">
+            </span>
+              <span>Orders</span>
+          </div>
+          <div>
+            <span>
+              <img src="image resources/parcel1.png" alt="">
+            </span>
+              <span>Help</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- add to cart section -->
+    <div class="cart-section">
+        <div>
+            <div class="checkout1">
+                <div>
+                    <h2>How would you like to get your order?</h2>
+                </div>
+                <div>
+                    <p>Customs regulation for India require a copy of the recipient's KYC. The address on the KYC needs to match the shipping address. Our courier will contact you via SMS/email in due course to obtain a copy of your KYC. The KYC will be stored securely and used solely for the purpose of clearing customs (including sharing it with customs officials) for this order, future orders, and any product returns. <a href="gethelp.html">Learn More</a></p>
+                </div>
+                <div>
+                    <button id="del"><i class="fas fa-truck-loading"></i>Deliver it</button>
+                </div>
+            </div>
+            <div class="checkout2">
+                <div>
+                    <h2>Enter your name and address:</h2>
+                </div>
+                <div>
+                    <input type="text" placeholder="First Name" id="Fname" onkeyup="check()"><br>
+                    <input type="text" placeholder="Last Name" id="Lname" onkeyup="check1()"><br>
+                    <input type="text" placeholder="Address Line 1" id="A1" onkeyup="check()"><br><span>We Do not ship to P.O. boxes</span><br>
+                    <input type="text" placeholder="Address Line 2" id="A2" ><br>
+                    <input type="text" placeholder="Address Line 3" id="A3"><br>
+                    <input type="number" id="post" placeholder="Postal Code">
+                    <input type="text" id="loc" placeholder="Locality">
+                    <select id="state">
+                        <option value="">State/Territory</option>
+                        <option >Andhra Pardesh</option>
+                        <option >Arunachal Pardesh</option>
+                        <option >Assam</option>
+                        <option >Bihar</option>
+                        <option >Chhanttisgarh</option>
+                        <option >Goa</option>
+                        <option >Gujrat</option>
+                        <option >Haryana</option>
+                        <option >Himachal Pradesh</option>
+                        <option >Jharkhand</option>
+                        <option >Karnataka</option>
+                        <option >Kerla</option>
+                        <option >Madhaya Pradesh</option>
+                        <option >Maharashtra</option>
+                        <option >Manipur</option>
+                        <option >Meghalya</option>
+                        <option >Mizoram</option>
+                        <option >Nagaland</option>
+                        <option >Odisha</option>
+                        <option >Punjab</option>
+                        <option >Sikkim</option>
+                        <option >Tamil Nada</option>
+                        <option >Telangana</option>
+                        <option >Tripura</option>
+                        <option >Utter Pradesh</option>
+                        <option >Uttarakhand</option>
+                        <option >West Bengal</option>
+                    </select>
+                    <button id="div2">India</button><br>
+                    <div>
+                        <input type="checkbox" id="checkbox"><span>Save this address to my profile</span><br>
+                        <input type="checkbox" id="checkbox"><span>Make this my Preferred Addreess</span><br>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout3">
+                <div>
+                    <h2>What's your contact information?</h2>
+                </div>
+                <div>
+                    <div id="c3">
+                        <input type="email" id="email" placeholder="Email"><br>
+                        <span>A confirmation email will be sent after checkout</span>
+                    </div>
+                    <div>
+                        <input type="number" id="number" placeholder="Phone Number"><br>
+                        <span>A carrier might contact you to confirm delivery</span>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout4">
+                <div>
+                    <h2>What's your PAN?</h2>
+                </div>
+                <div>
+                    <input type="text" id="pan" placeholder="PAN"><br>
+                    <span>Enter your PAN to enable payment with UPI, Net Banking or Local card methods</span><br>
+                    <input type="checkbox" id="checkbox"><span>Save PAN details to Nike Profile</span><br>
+                    <input type="checkbox" id="checkbox"> <span>I have read and consent to eShopWorld processing my information in accordance with the <a href="">Privacy Statement</a>  and <a href="">Cookie Policy</a>eShopWorld is a trusted Nike partner.
+                </div>
+            </div>
+            <div class="checkout5">
+                <div>
+                    <button id="con">Continue</button>
+                </div>
+                <div>Delivery</div>
+            </div>
+            <div class="checkout6">
+                <div>Shipping</div>
+                <div>Billing</div>
+                <div>Payment</div>
+            </div>
+        </div>
+        <div class="summary-sec">
+            <div>
+                <div>
+                    <h4>Order Summary</h4>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Do you Have a promo Code?</p>
+                </div>
+                <div>
+                    <p>Subtotal</p>
+                    <p id="s1">₹</p>
+                </div>
+                <div>
+                    <p>Estimated Shipping & Handling</p>
+                    <p id="s2">₹</p>
+                </div>
+                <div>
+                    <p>Estimated Tax</p>
+                    <p id="tax">---</p>
+                </div>
+            </div>
+            <div>
+                <p>Total</p>
+                <p id="s3">--</p>
+            </div>
+            <div id="checkout-items"></div>
+        </div>
+    </div>
+</div>
+<div class="space"></div>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer-container">
+          <div class="upper-footer">
+            <div class="footer-links">
+              <div>
+                <ul>
+                  <li><a href="#">FIND A STORE</a></li>
+                  <li><a href="#">BECOME A MEMBER</a></li>
+                  <li><a href="#">SIGN UP FOR EMAIL</a></li>
+                  <li><a href="#">STUDENT DISCOUNTS</a></li>
+                  <li><a href="#">SEND US FEEDBACK</a></li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li><a href="#">GET HELP</a></li>
+                  <li><a href="#">Order Status</a></li>
+                  <li><a href="#">Delivery</a></li>
+                  <li><a href="#">Returns</a></li>
+                  <li><a href="#">Payment Options</a></li>
+                  <li><a href="#">Contact Us On Nike.com Inquiries</a></li>
+                  <li><a href="#">Contact Us On All Other Inquiries</a></li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li><a href="#">ABOUT NIKE</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Investors</a></li>
+                  <li><a href="#">Sustainability</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="social-icons">
+              <ul>
+                <li><a href="#"><img src="image resources/facebook-logo.png" alt=""></a></li>
+                <li><a href="#"><img src="image resources/twitter.png"></a></li>
+                <li><a href="#"><img src="image resources/youtube-logo.png"></a></li>
+                <li><a href="#"><img src="image resources/instagram.png"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="lower-footer">
+            <div class="cpright-col">
+              <div>
+               <i class="fas fa-map-marker-alt"></i>
+                <span>India</span>
+              </div>
+              <div>
+                <span>© 2021 Nike, Inc. All Rights Reserved</span>
+              </div>
+            </div>
+            <div class="about-links">
+              <ul>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Terms of Sales</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">New Privacy policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>
+<script src="checkout.js"></script>
+

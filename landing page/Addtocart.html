@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="addtocart.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+  <div id="top-bar-container">
+    <div id="top-bar">
+      <div>
+        <img src="image resources/icons8-air-jordan-50.png" alt="" />
+      </div>
+      <div>
+        <ul>
+          <li><a href="help.html">Help</a></li>
+          <li>|</li>
+          <li><a href="JoinusPage.html">Join Us</a></li>
+          <li>|</li>
+          <li><a href="Signin.html">Sign In</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav-bar -->
+
+  <nav>
+    <div id="nav-details">
+      <!-- nike logo -->
+      <div id="nav-logo">
+        <a href="home.html"><img src="image resources/nike.png" alt="logo" /></a>
+      </div>
+      <!-- nav links -->
+      <div id="nav-bar">
+        <ul>
+          <li><a href="Men.html">Men</a></li>
+          <li><a href="Women.html">Women</a></li>
+          <li><a href="kids.html">Kids</a></li>
+          <li><a href="Salespage.html">Sales</a></li>
+          <li><a href="Customize.html">Customize</a></li>
+          <li><a href="infeed.html">SNKRS</a></li>
+        </ul>
+      </div>
+      <!-- nav search button -->
+      <div id="nav-search">
+        <div id="search-bar" >
+          <form action="" id="input-search">
+            <span>
+              <button>
+                <img src="image resources/search.png" alt="" /></button>
+              </span>
+            <input onfocus="expand()" type="text" placeholder="Search" />
+          </form>
+          <button id="cross-btn" onclick="cross()"><i class="fa fa-times"></i></button>
+        </div>
+        <div id="fav-icon">
+          <a href="favpage.html"><img src="image resources/love.png" alt="" /></a>
+          <span id="FAV"></span>
+        </div>
+        <div id="cart-icon">
+          <a href="Addtocart.html"
+            ><img src="image resources/shopping-bag.png" alt=""
+          /></a>
+          <span id="CArt"></span>
+        </div>
+        <div id="search-icon">
+          <a href="#">
+            <img src="image resources/search.png" alt="" />
+          </a>
+        </div>
+        <div id="menu-bar-icon">
+          <div id="icon-div">
+            <img src="image resources/menu.png" alt="">
+          </div>
+        </div>
+      <div id="menu-items">
+        <div id="close-menu">
+          <img src="image resources/close 1.png" alt="">
+        </div>
+        <ul>
+          <li>
+            <span>Men</span>
+            <span><a href="Men.html"><img class="menu-imgs" src="image resources/arrow.png" alt=""></span></a>
+          </li>
+          <li>
+            <span>Women</span>
+            <span><a href="Women.html"><img class="menu-imgs" src="image resources/arrow.png" alt=""></span></a>
+          </li>
+          <li>
+            <span>Kids</span>
+            <span><a href="kids.html"><img class="menu-imgs" src="image resources/arrow.png" alt=""></span></a>
+          </li>
+          <li>
+            <span>Customize</span>
+            <span><a href="Customize.html"><img class="menu-imgs" src="image resources/arrow.png" alt=""></span></a>
+          </li>
+          <li>
+            <span>Sale</span>
+            <span><a href="Salespage.html"><img class="menu-imgs" src="image resources/arrow.png" alt=""></span></a>
+          </li>
+          <li>
+            SNKRS
+          </li>
+        </ul>
+        <div>
+          <span>
+            <img src="image resources/icons8-air-jordan-50.png" alt="">
+          </span>
+          <span>Jordan</span>
+        </div>
+        <div class="menu-signup">
+          <p>Become a Nike Member for the best products, inspiration and stories in sports. <span>Learn more</span></p>
+          <div>
+            <a href="JoinusPage.html"><button>Join Us</button></a>
+            <a href="Signin.html"><button>Sign In</button></a>
+          </div>
+        </div>
+        <div class="other-opt">
+          <div>
+            <span>
+              <img src="image resources/shopping-bag.png" alt="">
+            </span>
+              <span>Bag</span>
+          </div>
+          <div>
+            <span>
+              <img src="image resources/question.png" alt="">
+            </span>
+              <span>Orders</span>
+          </div>
+          <div>
+            <span>
+              <img src="image resources/parcel1.png" alt="">
+            </span>
+              <span>Help</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- add to cart section -->
+<div class="cart-section">
+  <div>
+    <div>
+      <h4>Free Shipping For Members</h4>
+      <p>Become a Nike member for fast and free shipping <a href="Joinus.html"> Join us </a>or <a href="Signin.html"> Sign in</a></p>
+    </div>
+    <div>
+      <h1>bag</h1>
+      <section id="sec"></section>
+    </div>
+    <div>
+      <h4>Favorites</h4>
+      <p>Want to view your favorites?<a href="Joinus.html">Join us</a>or <a href="Signin.html">Sign in</a></p>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        <h4>Summary</h4>
+      </div>
+      <div>
+        <div>
+          <p>Do you Have a promo Code?</p>
+        </div>
+        <div>
+          <p>Subtotal</p>
+          <p id="s1">₹</p>
+        </div>
+        <div>
+          <p>Estimated Shipping & Handling</p>
+          <p id="s2">₹</p>
+        </div>
+        <div>
+          <p>Estimated Tax</p>
+          <p id="tax"></p>
+        </div>
+      </div>
+      <div>
+        <p>Total</p>
+        <p id="s3"></p>
+      </div>
+      <div>
+        <button><a href="checkout.html">CheckOut</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
+<script>
+
+  // top bar js
+
+  var menu = document.getElementById("menu-items")
+document.getElementById("menu-bar-icon").addEventListener("click",function(){
+  menu.style.right = "0px";
+})
+document.getElementById("close-menu").addEventListener("click",function(){
+  menu.style.right = "-400px";
+})
+
+var search = document.querySelector("#search-bar");
+var Cross = document.querySelector("#cross-btn")
+var topbar = document.querySelector("#top-bar-container");
+function expand(){
+    search.classList.add('expand');
+    Cross.style.display = "block";
+    topbar.style.height = "0vh";
+    topbar.style.transition = "0.3s ease-in-out";
+    
+}
+function cross(){
+    search.classList.remove('expand');
+    Cross.style.display = "none";
+    topbar.style.height = "4vh";
+    topbar.style.transition = "0.3s ease-in-out";
+}
+
+    window.addEventListener('load',function(){
+        var addtocart=JSON.parse(localStorage.getItem('ADDToCard'));
+        display(addtocart)  
+    })
+    var addtocart=JSON.parse(localStorage.getItem('ADDToCard'))
+    var favorites=JSON.parse(localStorage.getItem('Favorites'))||[];
+  
+    function display(addtocart)
+    {
+    document.getElementById('sec').innerHTML="";
+    addtocart.map(function(item,index){
+    var itemdiv = document.createElement("div");
+    itemdiv.setAttribute("class","itemdiv");
+    var iteminfo = document.createElement("div");
+    iteminfo.setAttribute("class","iteminfo");
+
+    var productdiv = document.createElement("div");
+    productdiv.setAttribute("class","productdiv");
+    var imgdiv = document.createElement("div");
+    imgdiv.setAttribute("class","imgdiv");
+    var img=document.createElement('img');
+    img.setAttribute('src',item.image_url);
+    imgdiv.append(img);
+
+    var details = document.createElement("div");
+    details.setAttribute("class","details");
+    var name=document.createElement('p');
+    name.textContent=item.name;
+    name.style.color = "black";
+    var brand=document.createElement('p')
+    brand.textContent=item.brand;
+    brand.style.color = "gray";
+    var type=document.createElement('p')
+    type.textContent=item.type;
+    type.style.color = "grey";
+    var size=document.createElement('p');
+    size.textContent=`Size - ${item.size}`;
+    size.style.color = "gray";
+
+    var btndiv = document.createElement("div");
+    btndiv.setAttribute("class","btndiv");
+    var favor=document.createElement('p');
+    favor.textContent="Move to Favourities";
+    favor.setAttribute('id','Favor');
+    favor.style.cursor = "pointer";
+    btndiv.append(favor);
+    var remove=document.createElement('p');
+    remove.setAttribute('id','remove')
+    remove.textContent="Remove";
+    remove.style.cursor = "pointer"
+    btndiv.append(remove);
+    details.append(name,brand,type,size,btndiv);
+    productdiv.append(imgdiv,details);
+    iteminfo.append(productdiv);
+
+    var pricediv = document.createElement("div");
+    pricediv.setAttribute("class","pricediv");
+    var price=document.createElement('p');
+    price.textContent="₹"+item.price;
+    price.style.color = "#111";
+    price.style.fontWeight = "500"
+    pricediv.append(price);
+    iteminfo.append(pricediv);
+    itemdiv.append(iteminfo);
+  
+    var iteminfo2 = document.createElement("div");
+    iteminfo2.setAttribute("class","iteminfo2");
+    var shipping = document.createElement("div");
+    shipping.setAttribute("class","shipping");
+    var deliver = document.createElement("p");
+    deliver.textContent = "Shipping";
+    deliver.style.color = "black";
+    var name2=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    var days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+    var d = new Date();
+    var date=d.getDate();
+    var day=days[d.getDay()];
+    var day2=days[d.getDay()+2];
+    var month=d.getMonth();
+    var deliverdate = document.createElement("p");
+    deliverdate.textContent="Arrives "+(day)+","+date+" "+name2[month]+"-"+day2+","+(date+2)+" "+name2[month];
+    deliverdate.style.color = "black";
+    shipping.append(deliver,deliverdate);
+    var store = document.createElement("div");
+    store.setAttribute("class","store");
+    var pickup = document.createElement("p");
+    pickup.textContent = "Free Pickup";
+    pickup.style.color = "black";
+    var find = document.createElement("p");
+    find.textContent = "Find Store";
+    find.style.borderBottom = "1px solid black";
+    find.style.width = "fit-content";
+    find.style.color = "black";
+    store.append(pickup,find);
+    iteminfo2.append(shipping,store);
+    itemdiv.append(iteminfo2);
+    
+    favor.addEventListener('click',function(){
+       
+        
+        var count=0;
+        for(var i=0;i<favorites.length;i++)
+        {
+            if(item==favorites[i])
+            {
+                alert("Already in Favorites")
+                count=1;
+            }
+        }
+        if(count==0){
+        favorites.push(item)
+        localStorage.setItem('Favorites',JSON.stringify(favorites))
+       alert("Move To Favorites")
+      
+  favorites.map(function(item,i){
+      document.getElementById("FAV").textContent=i+1
+  })
+    } 
+});
+
+    remove.addEventListener('click',function(){
+        MakeDelete(index)
+    })
+    var div =document.getElementById('sec')
+    
+    div.append(itemdiv);
+    })
+}
+var total=addtocart.reduce(function(a,b){
+    return a+Number(b.price)
+},0)
+     
+document.getElementById('s1').textContent="₹"+total;
+if(total>14000)
+{
+    document.getElementById('s2').textContent="Free";
+
+}
+else if(total==0)
+{
+    document.getElementById('s2').textContent="₹"+0;
+    total+=0;
+}
+else{
+    document.getElementById('s2').textContent="₹"+750;
+    total+=750;
+}
+document.getElementById('tax').textContent = `₹${total*(2/100)}`;
+    total -= total*(2/100);
+document.getElementById('s3').textContent="₹"+total
+localStorage.setItem('Total',total)
+
+
+function MakeDelete(index){
+    addtocart.splice(index,1);
+    localStorage.setItem('ADDToCard',JSON.stringify(addtocart))
+    display(addtocart)
+    location.reload();
+}
+
+var addtocart=JSON.parse(localStorage.getItem('ADDToCard'))
+  addtocart.map(function(item,i){
+    document.getElementById('CArt').textContent=i+1;
+  })
+  favorites.map(function(item,i){
+      document.getElementById("FAV").textContent=i+1
+  })
+  // top bar js
+
+  var menu = document.getElementById("menu-items")
+document.getElementById("menu-bar-icon").addEventListener("click",function(){
+  menu.style.right = "0px";
+})
+document.getElementById("close-menu").addEventListener("click",function(){
+  menu.style.right = "-400px";
+})
+
+var search = document.querySelector("#search-bar");
+var Cross = document.querySelector("#cross-btn")
+var topbar = document.querySelector("#top-bar-container");
+function expand(){
+    search.classList.add('expand');
+    Cross.style.display = "block";
+    topbar.style.height = "0vh";
+    topbar.style.transition = "0.3s ease-in-out";
+    
+}
+function cross(){
+    search.classList.remove('expand');
+    Cross.style.display = "none";
+    topbar.style.height = "4vh";
+    topbar.style.transition = "0.3s ease-in-out";
+}
+var filterDiv = document.querySelector(".product-filter");
+function hide(){
+  filterDiv.classList.toggle('hideAndshow');
+  filterDiv.style.transition = "0.4s ease-in-out";
+}
+</script>
+

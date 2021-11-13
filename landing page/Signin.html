@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/ea5026738a.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .container {
+        height: 600px;
+        width: 450px;
+        margin: 200px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #signindiv {
+        width: 100%;
+        height: fit-content;
+        border: 1px solid black;
+        text-align: center;
+        font-family: "Roboto Condensed", sans-serif;
+        color: gray;
+        font-size: 15px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      h1 {
+        font-weight: normal;
+        color: black;
+        font-size: 23px;
+      }
+      #img {
+        width: 65px;
+        height: 50px;
+        margin-top: 1px;
+        border: 0;
+        margin: auto;
+      }
+      #email,
+      #pass {
+        width: 70%;
+        height: 35px;
+        padding: 12px;
+        box-sizing: border-box;
+        font-size: 15px;
+      }
+      span {
+        text-decoration: underline;
+      }
+      button {
+        width: 70%;
+        height: 40px;
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+        border: 0;
+        border-radius: 4px;
+        box-sizing: border-box;
+        border: 1px solid teal;
+      }
+      i {
+        font-size: 45px;
+        color: black;
+      }
+      span {
+        color: black;
+      }
+      #a {
+        color: rgb(168, 161, 161);
+        margin-left: 15px;
+        font-size: 15px;
+      }
+      @media screen and (min-width: 400px) and (max-width: 800px) {
+        div {
+          height: 600px;
+        }
+      }
+      #img {
+        width: 65px;
+        height: 50px;
+        margin-top: 1px;
+        border: 0;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="signindiv">
+        <div id="img">
+          <a href="home.html"
+            ><img
+              src="https://static.nike.com/a/images/f_jpg,q_auto:eco/61b4738b-e1e1-4786-8f6c-26aa0008e80b/swoosh-logo-black.png"
+          /></a>
+        </div>
+        <h1>
+          YOUR ACCOUNT FOR<br />
+          EVERYTHING NIKE
+        </h1>
+        <input
+          type="email"
+          placeholder="Email Address"
+          id="email"
+        /><br /><br />
+        <input type="password" placeholder="Password" id="pass" /><br /><br />
+        <input type="checkbox" />key me sign in<a href="forget.html" id="a"
+          >Forgotten Your Password?</a
+        ><br /><br />
+        By logging in, you agree to Nike's <span>Privacy Policy</span> and<br />
+        <span> Terms of Use.</span><br /><br />
+        <button id="signin">SIGN IN</button><br /><br />
+        Not a Member?<a href="Joinus.html" style="color: black">Join us</a>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var alldata = JSON.parse(localStorage.getItem("UserInfo"));
+  document.getElementById("signin").addEventListener("click", function () {
+    var email = document.getElementById("email").value;
+    var pass = document.getElementById("pass").value;
+    var count = 0;
+    alldata.map(function (item) {
+      if (item.Email == email && item.Pass == pass) {
+        count++;
+      }
+    });
+    if (count > 0) {
+      alert("SIGN IN SUCCESSFUL");
+      window.location.href = "home.html";
+    } else if (count == 0) {
+      alert("Email Password Wrong");
+    }
+  });
+</script>

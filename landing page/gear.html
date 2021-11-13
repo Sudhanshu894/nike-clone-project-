@@ -1,0 +1,2199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="sales.css" />
+  </head>
+  <body>
+    <!-- top-bar -->
+
+    <div id="top-bar-container">
+      <div id="top-bar">
+        <div>
+          <img src="image resources/icons8-air-jordan-50.png" alt="" />
+        </div>
+        <div>
+          <ul>
+            <li><a href="help.html">Help</a></li>
+            <li>|</li>
+            <li><a href="JoinusPage.html">Join Us</a></li>
+            <li>|</li>
+            <li><a href="Signin.html">Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- nav-bar -->
+
+    <nav>
+      <div id="nav-details">
+        <!-- nike logo -->
+        <div id="nav-logo">
+          <a href="home.html"><img src="image resources/nike.png" alt="logo" /></a>
+        </div>
+        <!-- nav links -->
+        <div id="nav-bar">
+          <ul>
+            <li><a href="Men.html">Men</a></li>
+            <li><a href="Women.html">Women</a></li>
+            <li><a href="kids.html">Kids</a></li>
+            <li><a href="Salespage.html">Sales</a></li>
+            <li><a href="Customize.html">Customize</a></li>
+            <li><a href="infeed.html">SNKRS</a></li>
+          </ul>
+        </div>
+        <!-- nav search button -->
+        <div id="nav-search">
+          <div id="search-bar" >
+            <form action="" id="input-search">
+              <span>
+                <button>
+                  <img src="image resources/search.png" alt="" /></button>
+                </span>
+              <input onfocus="expand()" type="text" placeholder="Search" />
+            </form>
+            <button id="cross-btn" onclick="cross()"><i class="fa fa-times"></i></button>
+          </div>
+          <div id="fav-icon">
+            <a href="favpage.html"><img src="image resources/love.png" alt="" /></a>
+          </div>
+          <div id="cart-icon">
+            <a href="Addtocart.html"
+              ><img src="image resources/shopping-bag.png" alt=""
+            /></a>
+            <span id="CArt"></span>
+          </div>
+          <div id="search-icon">
+            <a href="#">
+              <img src="image resources/search.png" alt="" />
+            </a>
+          </div>
+          <div id="menu-bar-icon">
+            <div id="icon-div">
+              <img src="image resources/menu.png" alt="">
+            </div>
+          </div>
+        <div id="menu-items">
+          <div id="close-menu">
+            <img src="image resources/close 1.png" alt="">
+          </div>
+          <ul>
+            <li>
+              <span>Men</span>
+              <span><a href="Men.html"><img class="menu-imgs" src="image resources/arrow.png" alt=""></span></a>
+            </li>
+            <li>
+              <span>Women</span>
+              <span><a href="Women.html"><img class="menu-imgs" src="image resources/arrow.png" alt=""></span></a>
+            </li>
+            <li>
+              <span>Kids</span>
+              <span><a href="kids.html"><img class="menu-imgs" src="image resources/arrow.png" alt=""></span></a>
+            </li>
+            <li>
+              <span>Customize</span>
+              <span><a href="Customize.html"><img class="menu-imgs" src="image resources/arrow.png" alt=""></span></a>
+            </li>
+            <li>
+              <span>Sale</span>
+              <span><a href="Salespage.html"><img class="menu-imgs" src="image resources/arrow.png" alt=""></span></a>
+            </li>
+            <li>
+              SNKRS
+            </li>
+          </ul>
+          <div>
+            <span>
+              <img src="image resources/icons8-air-jordan-50.png" alt="">
+            </span>
+            <span>Jordan</span>
+          </div>
+          <div class="menu-signup">
+            <p>Become a Nike Member for the best products, inspiration and stories in sports. <span>Learn more</span></p>
+            <div>
+              <a href="JoinusPage.html"><button>Join Us</button></a>
+              <a href="Signin.html"><button>Sign In</button></a>
+            </div>
+          </div>
+          <div class="other-opt">
+            <div>
+              <span>
+                <img src="image resources/shopping-bag.png" alt="">
+              </span>
+                <span>Bag</span>
+            </div>
+            <div>
+              <span>
+                <img src="image resources/question.png" alt="">
+              </span>
+                <span>Orders</span>
+            </div>
+            <div>
+              <span>
+                <img src="image resources/parcel1.png" alt="">
+              </span>
+                <span>Help</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="sales-page">
+      <div id="top-sales-box">
+        <h1 id="heading"></h1>
+        <div id="filter-box">
+          <div class="type-bar"></div>
+          <div class="filter-div" onclick="hide()">
+            <span>Show Filters</span>
+            <span><img src="image resources/filter.png" alt="" /></span>
+          </div>
+          <div id="sort-types">
+            <select name="" id="sort" onchange="filter()">
+              <option value="--">Sort By</option>
+              <option value="featured">Featured</option>
+              <option value="newest">Newest</option>
+              <option value="high">Price:High to Low</option>
+              <option value="low">Price:Low to High</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div id="cloth-sorting-bar">
+        <ul>
+          <li onclick="clothli1()">Tops and T-Shirts</li>
+          <li onclick="clothli2()">Shorts</li>
+          <li onclick="clothli3()">Trousers & Tights</li>
+          <li onclick="clothli4()">Jackets & Giltets</li>
+          <li onclick="clothli5()">Hoddies & Sweatshirts</li>
+          <li onclick="clothli6()">Socks</li>
+          <li onclick="clothli7()">Compression & Baselayer</li>
+          <li onclick="clothli8()">Tracksuits</li>
+          <li onclick="clothli9()">Accessories and Equipments</li>
+        </ul>
+      </div>
+      <div class="sales-content-box">
+        <div class="product-filter">
+          <div class="sort-type-filter">
+            <h1>Sort By</h1>
+            <div>
+              <input type="radio" name="sort" onclick="sort1()" id="featured" value="featured" >
+              <label for="featured">Featured</label><br>
+              <input type="radio" name="sort" onclick="sort2()" id="newest" value="newest">
+              <label for="newest">Newest</label><br>
+              <input type="radio" name="sort" onclick="sort3()" id="high" value="high">
+              <label for="high">High to Low</label><br>
+              <input type="radio" name="sort" onclick="sort4()" id="low" value="low">
+              <label for="low">Low to High</label><br>
+            </div>
+          </div>
+          <div class="clothing-type-filter">
+            <ul>
+              <li onclick="clothli1()">Tops and T-Shirts</li>
+              <li onclick="clothli2()">Shorts</li>
+              <li onclick="clothli3()">Trousers & Tights</li>
+              <li onclick="clothli4()">Jackets & Giltets</li>
+              <li onclick="clothli5()">Hoddies & Sweatshirts</li>
+              <li onclick="clothli6()">Socks</li>
+              <li onclick="clothli7()">Compression & Baselayer</li>
+              <li onclick="clothli8()">Tracksuits</li>
+              <li onclick="clothli9()">Accessories and Equipments</li>
+            </ul>
+          </div>
+          <div class="brand-type-filter">
+            <h1>Brand</h1>
+            <div>
+              <input type="checkbox" name="brand" class="brandcheckbox" id="Nike-Sportswear" value="Nike Sportswear" onclick="selectbrand1()">
+              <label for="Nike-Sportswear">Nike Sportswear</label><br>
+              <input type="checkbox" name="brand" class="brandcheckbox" id="Jordan" value="Jordan" onclick="selectbrand2()">
+              <label for="Jordan">Jordan</label><br>
+              <input type="checkbox" name="brand" class="brandcheckbox" id="NikeLab" value="NikeLab" onclick="selectbrand3()">
+              <label for="NikeLab">NikeLab</label><br>
+              <input type="checkbox" name="brand" class="brandcheckbox" id="Nike-Pro" value="Nike Pro" onclick="selectbrand4()">
+              <label for="Nike-Pro">Nike Pro</label><br>
+              <input type="checkbox" name="brand" class="brandcheckbox" id="ACG" value="ACG" onclick="selectbrand5()">
+              <label for="ACG">ACG</label><br>
+              <input type="checkbox" name="brand" class="brandcheckbox" id="Nike-By-You" value="Nike By You" onclick="selectbrand6()">
+              <label for="Nike-By-You">Nike By You</label><br>
+            </div>
+          </div>
+          <div class="sports-type-filter">
+            <h1>Sports</h1>
+            <div>
+              <form action="">
+                <input type="radio" name="sports" onclick="sports1()" id="Lifestyle" value="Lifestyle" >
+                <label for="Lifestyle">Lifestyle</label><br>
+                <input type="radio" name="sports" onclick="sports2()" id="Running" value="Running">
+                <label for="Running">Running</label><br>
+                <input type="radio" name="sports" onclick="sports3()" id="Training-and-Gym" value="Training and Gym">
+                <label for="Training-and-Gym">Training & Gym</label><br>
+                <input type="radio" name="sports" onclick="sports4()" id="Jordan" value="Jordan">
+                <label for="Jordan">Jordan</label><br>
+                <input type="radio" name="sports" onclick="sports5()" id="Athletics" value="Athletics">
+                <label for="Athletics">Athletics</label><br>
+                <input type="radio" name="sports" onclick="sports6()" id="Skateboarding" value="Skateboarding">
+                <label for="Skateboarding">Skateboarding</label><br>
+                <input type="radio" name="sports" onclick="sports7()" id="Golf" value="Golf">
+                <label for="Golf">Golf</label><br>
+                <input type="radio" name="sports" onclick="sports8()" id="Tennis" value="Tennis">
+                <label for="Tennis">Tennis</label><br>
+                <input type="radio" name="sports" onclick="sports9()" id="Walking" value="Walking">
+                <label for="Walking">Walking</label><br>
+                <input type="radio" name="sports" onclick="sports10()" id="Football" value="Football">
+                <label for="Football">Football</label><br>
+                <input type="radio" name="sports" onclick="sports11()" id="Basketball" value="Basketball">
+                <label for="Basketball">Basketball</label><br>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="container"></div>
+      </div>
+    </div>
+
+    <!-- footer  -->
+    <div class="space"></div>
+    <footer>
+      <div class="footer-container">
+        <div class="upper-footer">
+          <div class="footer-links">
+            <div>
+              <ul>
+                <li><a href="#">FIND A STORE</a></li>
+                <li><a href="#">BECOME A MEMBER</a></li>
+                <li><a href="#">SIGN UP FOR EMAIL</a></li>
+                <li><a href="#">STUDENT DISCOUNTS</a></li>
+                <li><a href="#">SEND US FEEDBACK</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="#">GET HELP</a></li>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Payment Options</a></li>
+                <li><a href="#">Contact Us On Nike.com Inquiries</a></li>
+                <li><a href="#">Contact Us On All Other Inquiries</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="#">ABOUT NIKE</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Sustainability</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="social-icons">
+            <ul>
+              <li><a href="#"><img src="image resources/facebook-logo.png" alt=""></a></li>
+              <li><a href="#"><img src="image resources/twitter.png"></a></li>
+              <li><a href="#"><img src="image resources/youtube-logo.png"></a></li>
+              <li><a href="#"><img src="image resources/instagram.png"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="lower-footer">
+          <div class="cpright-col">
+            <div>
+             <i class="fas fa-map-marker-alt"></i>
+              <span>India</span>
+            </div>
+            <div>
+              <span>© 2021 Nike, Inc. All Rights Reserved</span>
+            </div>
+          </div>
+          <div class="about-links">
+            <ul>
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">Terms of Sales</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">New Privacy policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- last space -->
+    <div class="last"></div>
+  </body>
+</html>
+<script>
+  // var productList = [
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-shoe-WrLlWX.png",
+  //     name: "Nike Air Force 1 '07",
+  //     price: "₹7,495",
+  //     brand: "Nike Sportswear",
+  //     size: "6.5",
+  //     type: "Lifestyle",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d3504f3d-8803-412d-aa61-0e0fae61cec4/dunk-high-1985-sp-shoes-Kwc210.png",
+  //     name: "Nike Dunk High 1985 SP",
+  //     price: "₹11,495",
+  //     brand: "Nike By You",
+  //     size: "5.5",
+  //     type: "Running",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a3e6a764-6468-4862-947f-75a04a1f0d8a/air-force-1-07-lx-shoes-zk5Tch.png",
+  //     name: "Nike Air Force 1 '07 LX",
+  //     price: "₹8,295",
+  //     brand: "Nike Sportswear",
+  //     size: "5",
+  //     type: "Training and Gym",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/14c94550-ca1f-4de6-90cf-e7a1e2e49df0/air-jordan-1-mid-se-shoes-hHltxp.png",
+  //     name: "Air Jordan 1 Mid SE",
+  //     price: "₹10,295",
+  //     brand: "Jordan",
+  //     size: "6",
+  //     type: "Jordan",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/c73b07cd-b46d-4d18-a809-712f665f96b7/air-zoom-type-shoes-wDkpJf.png",
+  //     name: "Nike Air Zoom-Type Premium",
+  //     price: "₹10,797",
+  //     brand: "NikeLab",
+  //     size: "7",
+  //     type: "Training & Gym",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/5b14d02a-fb19-4cf6-9110-4302b7e7020f/air-zoom-pegasus-38-road-running-shoes-fdlkXG.png",
+  //     name: "Nike Air Zoom Pegasus 38",
+  //     price: "₹9,995",
+  //     brand: "NikeLab",
+  //     size: "7.5",
+  //     type: "Athletics",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/zioxfvivn5xsannxlvuk/revolution-5-road-running-shoes-szF7CS.png",
+  //     name: "Nike Revolution 5",
+  //     price: "₹3,695",
+  //     brand: "ACG",
+  //     size: "8",
+  //     type: "Skateboarding",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/54830e24-e2d7-4c03-9071-a8b5de471c19/react-infinity-run-flyknit-2-road-running-shoes-Qfh63N.png",
+  //     name: "Nike React Infinity Run Flyknit 2",
+  //     price: "₹14,495",
+  //     brand: "ACG",
+  //     size: "8.5",
+  //     type: "Golf",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/kzl8jgsw9xetmkkkrmwc/kepa-kai-flip-flop-jwXChS.png",
+  //     name: "Nike Kepa Kai",
+  //     price: "₹1,995",
+  //     brand: "NikeLab",
+  //     size: "9",
+  //     type: "Tennis",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/d58acf15-2506-40f9-80ed-beff5114392c/retro-gts-shoe-rHcd47.png",
+  //     name: "Nike Retro GTS",
+  //     price: "₹4,995",
+  //     brand: "Nike Sportswear",
+  //     size: "9.5",
+  //     type: "Walking",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/54f0cae1-c075-4fec-8017-d960a6264e4d/jordan-why-not-zer04-pf-basketball-shoe-P3c3Rp.png",
+  //     name: "Jordan 'Why Not?' Zer0.4 PF",
+  //     price: "₹9,197",
+  //     brand: "Jordan",
+  //     size: "10",
+  //     type: "Jordan",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/420ae91b-50e6-4421-83c9-8ed95bad8bb6/edcvghj-iuhbgfr-qwdcv.png",
+  //     name: "Nike Blazer '77 Cozi By You",
+  //     price: "₹11,495",
+  //     brand: "Nike Sportswear",
+  //     size: "10.5",
+  //     type: "Lifestyle",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/37cd492e-d0c3-4592-bc59-418e9d15cbfd/air-jordan-xxxvi-first-light-pf-basketball-shoes-fjPfDg.png",
+  //     name: "Air Jordan XXXVI 'First Light' PF",
+  //     price: "₹16,595",
+  //     brand: "Jordan",
+  //     size: "11",
+  //     type: "Jordan",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/3a95d122-8329-4b5d-8397-955220407865/custom-nike-air-zoom-pegasus-38-shield-by-you.png",
+  //     name: "Nike Air Zoom Pegasus 38 Shield By You",
+  //     price: "₹14,595",
+  //     brand: "Nike By You",
+  //     size: "11.5",
+  //     type: "Football",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/ab1fd708-f5a1-426a-b7b4-7f0ed590177f/kyrie-low-4-ep-basketball-shoe-gD2KLL.png",
+  //     name: "Kyrie Low 4 EP",
+  //     price: "₹9,295",
+  //     brand: "NikeLab",
+  //     size: "12",
+  //     type: "Golf",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/00b457c8-e740-4150-b18c-8c163cc0d350/air-zoom-terra-kiger-7-trail-running-shoes-nm2pqh.png",
+  //     name: "Nike Air Zoom Terra Kiger 7",
+  //     price: "₹12,495",
+  //     brand: "ACG",
+  //     size: "13",
+  //     type: "Running",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/a04da4ac-13b8-47dd-adda-d2fecdf82baf/air-presto-id-shoe.png",
+  //     name: "Nike Air Presto By You",
+  //     price: "₹13,495",
+  //     brand: "Nike By You",
+  //     size: "12.5",
+  //     type: "Lifestyle",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/d47ad86c-0468-4102-85bd-98cc4a5ba655/wildhorse-7-trail-running-shoes-XdK82N.png",
+  //     name: "Nike Wildhorse 7",
+  //     price: "₹10,295",
+  //     brand: "Nike Sportswear",
+  //     size: "14",
+  //     type: "Football",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/1bfda984-f890-4b22-aa66-c93f14e93aec/custom-nike-zoom-freak-3-by-you.png",
+  //     name: "Nike Zoom Freak 3 By You",
+  //     price: "₹12,495",
+  //     brand: "Nike Sportswear",
+  //     size: "15",
+  //     type: "Basketball",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/164d2097-fd8d-4cd0-8d34-61d19ac0deda/renew-retaliation-tr-2-training-shoe-ShTzgB.png",
+  //     name: "Nike Renew Retaliation TR 2",
+  //     price: "₹5,995",
+  //     brand: "Nike By You",
+  //     size: "4",
+  //     type: "Football",
+  //   },
+
+  //   {
+  //     category: "Shoes",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/53cf1f1b-f8ce-4c12-92b6-818f63a2dd64/air-zoom-infinity-tour-nrg-golf-shoe-xTql6K.png",
+  //     name: "Nike Air Zoom Infinity Tour NRG",
+  //     price: "₹16,595",
+  //     brand: "Nike Sportswear",
+  //     size: "4.5",
+  //     type: "Golf",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/73924571-2de5-4c56-9d63-d93b9ede8473/sportswear-t-shirt-D9hLKr.png",
+  //     name: "Nike Sportswear",
+  //     price: "₹2,195",
+  //     brand: "Nike Sportswear",
+  //     size: "XS",
+  //     type: "Tops and T-Shirts",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/73d48e79-16a0-4c6a-bb4c-19417d4f50ed/liverpool-fc-2021-22-stadium-home-football-shirt-gcNpBV.png",
+  //     name: "Liverpool F.C. 2021/22 Stadium Home",
+  //     price: "₹4,695",
+  //     brand: "Nike Sportswear",
+  //     size: "S",
+  //     type: "Tops and T-Shirts",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/a0aff5d7-598d-460f-ad32-ad8008b8dfda/dri-fit-rise-365-short-sleeve-running-top-TzvTdf.png",
+  //     name: "Nike Dri-FIT Rise 365",
+  //     price: "₹2,495",
+  //     brand: "NikeLab",
+  //     size: "M",
+  //     type: "Tops and T-Shirts",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/i1-8b04783a-a028-4f67-a1ac-5598bb7f9088/flex-stride-18cm-2-in-1-running-shorts-kkKFDX.png",
+  //     name: "Nike Flex Stride",
+  //     price: "₹2,995",
+  //     brand: "NikeLab",
+  //     size: "L",
+  //     type: "Shorts",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/4d686df6-b419-4854-9f09-bf82e33fbf05/flex-woven-training-shorts-NBsnx7.png",
+  //     name: "Nike Flex",
+  //     price: "₹1,795",
+  //     brand: "Nike Pro",
+  //     size: "XL",
+  //     type: "Shorts",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/ab3c4101-1b2b-4184-8da9-01ab44a2bf5f/dri-fit-fast-1-2-length-running-tights-cPqH4x.png",
+  //     name: "Nike Dri-FIT Fast",
+  //     price: "₹1,995",
+  //     brand: "Jordan",
+  //     size: "2XL",
+  //     type: "Trousers & Tights",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/0191777b-15ee-44a9-9336-03f7cbe32e94/training-trousers-T84sjx.png",
+  //     name: "Nike",
+  //     price: "₹2,495",
+  //     brand: "Nike Pro",
+  //     size: "7-8.5",
+  //     type: "Trousers & Tights",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/4c109b8a-fac4-475e-aa53-a3dd09ad6c81/dri-fit-woven-training-jacket-323Tk5.png",
+  //     name: "Nike Dri-FIT",
+  //     price: "₹3,495",
+  //     brand: "NikeLab",
+  //     size: "S(40)",
+  //     type: "Jackets & Gilets",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/5804c8f5-efd6-4863-bc1e-2a6df68cf13c/sportswear-club-french-terry-sweatshirt-BXBSKm.png",
+  //     name: "Nike Sportswear Club",
+  //     price: "₹2,895",
+  //     brand: "Jordan",
+  //     size: "M(44)",
+  //     type: "Hoodies & Sweatshirts",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/de02328e-60ea-497c-ba05-3ab35e9a27df/sport-clash-training-hoodie-R0CGhq.png",
+  //     name: "Nike Therma-FIT Sport Clash",
+  //     price: "₹3,995",
+  //     brand: "Nike Sportswear",
+  //     size: "L(48)",
+  //     type: "Hoodies & Sweatshirts",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a7b8c313-8a37-4dee-be4a-0d61041cd9e6/jordan-jumpman-gilet-KPX3f0.png",
+  //     name: "Jordan Jumpman",
+  //     price: "₹5,495",
+  //     brand: "Jordan",
+  //     size: "XL(52)",
+  //     type: "Jackets & Gilets",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9bf86bc6-aa3f-4ff5-b3a0-3928ca1e96fc/jordan-dri-fit-air-statement-fleece-pullover-hoodie-fmt5dJ.png",
+  //     name: "Jordan Dri-FIT Air",
+  //     price: "₹4,495",
+  //     brand: "Jordan",
+  //     size: "2XL(56)",
+  //     type: "Hoodies & Sweatshirts",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2631d749-3f5a-4f8d-b25c-bad4632d33c5/jordan-essentials-fleece-shorts-rJ9Ngf.png",
+  //     name: "Jordan Essentials",
+  //     price: "₹2,295",
+  //     brand: "Jordan",
+  //     size: "XS",
+  //     type: "Shorts",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/61a71319-b296-4cb2-9d67-96447b0dcf1e/everyday-lightweight-training-no-show-socks-K5cbcM.png",
+  //     name: "Nike Everyday Lightweight",
+  //     price: "₹595",
+  //     brand: "Nike Pro",
+  //     size: "S",
+  //     type: "Socks",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fpsnczh9rlm6k2zflitg/everyday-lightweight-training-crew-socks-Gvl3WS.png",
+  //     name: "Nike Everyday Lightweight",
+  //     price: "₹595",
+  //     brand: "NikeLab",
+  //     size: "M",
+  //     type: "Socks",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/caaff434-102e-45f3-b8b4-9a757ac07e4c/dri-fit-run-division-rise-365-short-sleeve-running-top-gcgPkp.png",
+  //     name: "Nike Dri-FIT Run Division Rise 365",
+  //     price: "₹2,995",
+  //     brand: "NikeLab",
+  //     size: "7-8.5",
+  //     type: "Tops and T-Shirts",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/11101919-c913-4be0-b0ac-c3261185b945/kyrie-irving-nets-statement-edition-2020-jordan-nba-swingman-jersey-f8Qf6h.png",
+  //     name: "Kyrie Irving Nets Statement Edition 2020",
+  //     price: "₹4,995",
+  //     brand: "NikeLab",
+  //     size: "XL(52)",
+  //     type: "Compression & Baselayer",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ae82bf7b-9310-4dc4-a0ab-7c7aba949f08/solo-swoosh-t-shirt-2CFK7L.png",
+  //     name: "Nike Solo Swoosh",
+  //     price: "₹2,195",
+  //     brand: "Nike Pro",
+  //     size: "2XL(56)",
+  //     type: "Tops and T-Shirts",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/47ab4f4d-5303-4d78-a3e8-68c56da02a83/nikecourt-dri-fit-advantage-tennis-polo-5VTt2P.png",
+  //     name: "NikeCourt Dri-FIT Advantage",
+  //     price: "₹2,795",
+  //     brand: "Nike Sportswear",
+  //     size: "L(48)",
+  //     type: "Compression & Baselayer",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/640594c9-288b-4569-bfc0-6a5472cc912b/polo-liverpool-fc-slim-fit-polo-mjX7Tf.png",
+  //     name: "The Nike Polo Liverpool F.C.",
+  //     price: "₹3,295",
+  //     brand: "Nike Sportswear",
+  //     size: "XS",
+  //     type: "Tracksuits",
+  //   },
+
+  //   {
+  //     category: "Clothing",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/40cfcfe1-46c8-4aa0-8e0b-c6410bc39048/dri-fit-academy-football-pants-p4fxCh.png",
+  //     name: "Nike Dri-FIT Academy",
+  //     price: "₹2,495",
+  //     brand: "Nike Pro",
+  //     size: "S(40)",
+  //     type: "Trousers & Tights",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/64c0bc7b-8527-4aff-a22e-9fca82aa7189/heritage-duffel-bag-KNfnRP.png",
+  //     name: "Nike Heritage",
+  //     price: "₹3,495",
+  //     brand: "ACG",
+  //     size: "",
+  //     type: "Bags & Backpacks",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/99bf25b4-ec8e-40d2-aca9-13d41feb66f3/jordan-utility-beanie-hwKh94.png",
+  //     name: "Jordan",
+  //     price: "₹1,695",
+  //     brand: "Jordan",
+  //     size: "",
+  //     type: "Hats, Visors & Headbands",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4761716c-5762-48f2-b0ed-556ab8c30405/liverpool-fc-pitch-football-sGGQKG.png",
+  //     name: "Liverpool F.C. Pitch",
+  //     price: "₹1,795",
+  //     brand: "Nike Sportswear",
+  //     size: "",
+  //     type: "Balls",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/4afbb4ac-3483-4022-8c85-967667e890be/mercurial-lite-football-shinguards-2VccDq.png",
+  //     name: "Nike Mercurial Lite",
+  //     price: "₹1,595",
+  //     brand: "Nike Sportswear",
+  //     size: "",
+  //     type: "Pads, Guards & Protection",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/f016b996-d009-4dbd-ac65-917b2d524dbb/brasilia-winterized-training-duffel-bag-9PRV2D.png",
+  //     name: "Nike Brasilia",
+  //     price: "₹3,495",
+  //     brand: "NikeLab",
+  //     size: "",
+  //     type: "Bags & Backpacks",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/91c4b38b-b1eb-4eb1-b3c3-07c44bcd0d3b/heritage-cross-body-bag-Qf2sqq.png",
+  //     name: "Nike Heritage",
+  //     price: "₹895",
+  //     brand: "NikeLab",
+  //     size: "",
+  //     type: "Bags & Backpacks",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/17f3d515-f8a9-42a4-aaa3-16a34674990f/liverpool-fc-strike-football-P2h5gw.png",
+  //     name: "Liverpool F.C. Strike",
+  //     price: "₹1,995",
+  //     brand: "ACG",
+  //     size: "",
+  //     type: "Balls",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/fcb2a341-640a-4409-9e2b-90ec12618ff3/dri-fit-tailwind-fast-running-cap-gkL8G6.png",
+  //     name: "Nike Dri-FIT Tailwind Fast",
+  //     price: "₹1,195",
+  //     brand: "NIkeLab",
+  //     size: "",
+  //     type: "Hats, Visors & Headbands",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/9c43847b-cbfd-47a8-a7d4-f44e1ce1f3b5/utility-speed-graphic-training-backpack-lGSPgQ.png",
+  //     name: "Nike Utility Speed",
+  //     price: "₹4,495",
+  //     brand: "ACG",
+  //     size: "",
+  //     type: "Bags & Backpacks",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/8aed18f1-2f30-4fbe-87d2-f926cab0dd82/jordan-cuffed-beanie-S8rfXl.png",
+  //     name: "Jordan",
+  //     price: "₹1,195",
+  //     brand: "Jordan",
+  //     size: "",
+  //     type: "Hats, Visors & Headbands",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/203298cc-2d8e-4821-b12a-b5e5a5629b80/sb-icon-skate-hip-pack-fmtmhr.png",
+  //     name: "Nike SB Icon",
+  //     price: "₹1,695",
+  //     brand: "NikeLab",
+  //     size: "",
+  //     type: "Bags & Backpacks",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/53698619-125e-406d-a9c9-5c5d9b3c2928/goalkeeper-match-football-gloves-0S4K6P.png",
+  //     name: "Nike Goalkeeper Match",
+  //     price: "₹1,795",
+  //     brand: "Nike Sportswear",
+  //     size: "",
+  //     type: "Gloves & Mitts",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c2b77380-70dd-4429-8854-0322228c418d/venturer-face-mask-7FpwM7.png",
+  //     name: "Nike Venturer",
+  //     price: "₹2,995",
+  //     brand: "ACG",
+  //     size: "",
+  //     type: "Pads, Guards & Protection",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/i1-74fffc9d-481d-4537-8c55-a3c858d494a0/utility-heat-training-backpack-gK6C9j.png",
+  //     name: "Nike Utility Heat",
+  //     price: "₹3,995",
+  //     brand: "Nike Sportswear",
+  //     size: "",
+  //     type: "Hats, Visors & Headbands",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b7e6d6df-20ef-4b53-bb5d-619a54a5d6ba/sportswear-bucket-hat-pnF01f.png",
+  //     name: "Nike Sportswear",
+  //     price: "₹1,595",
+  //     brand: "Nike Sportswear",
+  //     size: "",
+  //     type: "Hats, Visors & Headbands",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/67ceba6c-dab7-4fda-a8de-9c6e1adf1d0f/liverpool-fc-dri-fit-reversible-football-bucket-hat-FZc212.png",
+  //     name: "Liverpool F.C.",
+  //     price: "₹1,695",
+  //     brand: "NikeLab",
+  //     size: "",
+  //     type: "Hats, Visors & Headbands",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc19ce9d-6e9c-4a3f-9546-e46647bb5168/liverpool-fc-skills-football-W6BG5g.png",
+  //     name: "Liverpool F.C. Skills",
+  //     price: "₹1,295",
+  //     brand: "Nike Sportswear",
+  //     size: "",
+  //     type: "Balls",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-80617fe8-f73a-44fe-95ac-03f4a4dc9320/utility-training-gymsack-W3j0P1.png",
+  //     name: "Nike Utility",
+  //     price: "₹1,395",
+  //     brand: "ACG",
+  //     size: "",
+  //     type: "Bags & Backpacks",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/12d59eb0-cbe0-4e14-b526-694951252142/air-tech-hip-pack-GXwXF4.png",
+  //     name: "Nike Air Tech",
+  //     price: "₹2,295",
+  //     brand: "NikeLab",
+  //     size: "",
+  //     type: "Bags & Backpacks",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ddc8f98a-57ee-47da-b536-a9174a338887/sportswear-utility-patch-beanie-FvCClB.png",
+  //     name: "Jordan",
+  //     price: "₹1,695",
+  //     brand: "Jordan",
+  //     size: "",
+  //     type: "Hats, Visors & Headbands",
+  //   },
+
+  //   {
+  //     category: "Gear",
+  //     image_url:
+  //       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f68a4f7e-e1ac-4ed7-bfa7-2e9769fdb92b/paris-saint-germain-graphic-bucket-hat-rnr7xm.png",
+  //     name: "Paris Saint-Germain",
+  //     price: "₹1,695",
+  //     brand: "Jordan",
+  //     size: "",
+  //     type: "Hats, Visors & Headbands",
+  //   },
+  // ];
+  var productList = [
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-shoe-WrLlWX.png",
+      name: "Nike Air Force 1 '07",
+      price: "7495",
+      brand: "Nike Sportswear",
+      size: "6.5",
+      type: "Lifestyle",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d3504f3d-8803-412d-aa61-0e0fae61cec4/dunk-high-1985-sp-shoes-Kwc210.png",
+      name: "Nike Dunk High 1985 SP",
+      price: "11495",
+      brand: "Nike By You",
+      size: "5.5",
+      type: "Running",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a3e6a764-6468-4862-947f-75a04a1f0d8a/air-force-1-07-lx-shoes-zk5Tch.png",
+      name: "Nike Air Force 1 '07 LX",
+      price: "8295",
+      brand: "Nike Sportswear",
+      size: "5",
+      type: "Training and Gym",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/14c94550-ca1f-4de6-90cf-e7a1e2e49df0/air-jordan-1-mid-se-shoes-hHltxp.png",
+      name: "Air Jordan 1 Mid SE",
+      price: "10295",
+      brand: "Jordan",
+      size: "6",
+      type: "Jordan",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/c73b07cd-b46d-4d18-a809-712f665f96b7/air-zoom-type-shoes-wDkpJf.png",
+      name: "Nike Air Zoom-Type Premium",
+      price: "10797",
+      brand: "NikeLab",
+      size: "7",
+      type: "Training & Gym",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/5b14d02a-fb19-4cf6-9110-4302b7e7020f/air-zoom-pegasus-38-road-running-shoes-fdlkXG.png",
+      name: "Nike Air Zoom Pegasus 38",
+      price: "9995",
+      brand: "NikeLab",
+      size: "7.5",
+      type: "Athletics",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/zioxfvivn5xsannxlvuk/revolution-5-road-running-shoes-szF7CS.png",
+      name: "Nike Revolution 5",
+      price: "3695",
+      brand: "ACG",
+      size: "8",
+      type: "Skateboarding",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/54830e24-e2d7-4c03-9071-a8b5de471c19/react-infinity-run-flyknit-2-road-running-shoes-Qfh63N.png",
+      name: "Nike React Infinity Run Flyknit 2",
+      price: "14495",
+      brand: "ACG",
+      size: "8.5",
+      type: "Golf",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/kzl8jgsw9xetmkkkrmwc/kepa-kai-flip-flop-jwXChS.png",
+      name: "Nike Kepa Kai",
+      price: "1995",
+      brand: "NikeLab",
+      size: "9",
+      type: "Tennis",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/d58acf15-2506-40f9-80ed-beff5114392c/retro-gts-shoe-rHcd47.png",
+      name: "Nike Retro GTS",
+      price: "4995",
+      brand: "Nike Sportswear",
+      size: "9.5",
+      type: "Walking",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/54f0cae1-c075-4fec-8017-d960a6264e4d/jordan-why-not-zer04-pf-basketball-shoe-P3c3Rp.png",
+      name: "Jordan 'Why Not?' Zer0.4 PF",
+      price: "9197",
+      brand: "Jordan",
+      size: "10",
+      type: "Jordan",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/420ae91b-50e6-4421-83c9-8ed95bad8bb6/edcvghj-iuhbgfr-qwdcv.png",
+      name: "Nike Blazer '77 Cozi By You",
+      price: "11495",
+      brand: "Nike Sportswear",
+      size: "10.5",
+      type: "Lifestyle",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/37cd492e-d0c3-4592-bc59-418e9d15cbfd/air-jordan-xxxvi-first-light-pf-basketball-shoes-fjPfDg.png",
+      name: "Air Jordan XXXVI 'First Light' PF",
+      price: "16595",
+      brand: "Jordan",
+      size: "11",
+      type: "Jordan",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/3a95d122-8329-4b5d-8397-955220407865/custom-nike-air-zoom-pegasus-38-shield-by-you.png",
+      name: "Nike Air Zoom Pegasus 38 Shield By You",
+      price: "14595",
+      brand: "Nike By You",
+      size: "11.5",
+      type: "Football",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/ab1fd708-f5a1-426a-b7b4-7f0ed590177f/kyrie-low-4-ep-basketball-shoe-gD2KLL.png",
+      name: "Kyrie Low 4 EP",
+      price: "9295",
+      brand: "NikeLab",
+      size: "12",
+      type: "Golf",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/00b457c8-e740-4150-b18c-8c163cc0d350/air-zoom-terra-kiger-7-trail-running-shoes-nm2pqh.png",
+      name: "Nike Air Zoom Terra Kiger 7",
+      price: "12495",
+      brand: "ACG",
+      size: "13",
+      type: "Running",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/a04da4ac-13b8-47dd-adda-d2fecdf82baf/air-presto-id-shoe.png",
+      name: "Nike Air Presto By You",
+      price: "13495",
+      brand: "Nike By You",
+      size: "12.5",
+      type: "Lifestyle",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/d47ad86c-0468-4102-85bd-98cc4a5ba655/wildhorse-7-trail-running-shoes-XdK82N.png",
+      name: "Nike Wildhorse 7",
+      price: "10295",
+      brand: "Nike Sportswear",
+      size: "14",
+      type: "Football",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/1bfda984-f890-4b22-aa66-c93f14e93aec/custom-nike-zoom-freak-3-by-you.png",
+      name: "Nike Zoom Freak 3 By You",
+      price: "12495",
+      brand: "Nike Sportswear",
+      size: "15",
+      type: "Basketball",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/164d2097-fd8d-4cd0-8d34-61d19ac0deda/renew-retaliation-tr-2-training-shoe-ShTzgB.png",
+      name: "Nike Renew Retaliation TR 2",
+      price: "5995",
+      brand: "Nike By You",
+      size: "4",
+      type: "Football",
+    },
+
+    {
+      category: "Shoes",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/53cf1f1b-f8ce-4c12-92b6-818f63a2dd64/air-zoom-infinity-tour-nrg-golf-shoe-xTql6K.png",
+      name: "Nike Air Zoom Infinity Tour NRG",
+      price: "16595",
+      brand: "Nike Sportswear",
+      size: "4.5",
+      type: "Golf",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/73924571-2de5-4c56-9d63-d93b9ede8473/sportswear-t-shirt-D9hLKr.png",
+      name: "Nike Sportswear",
+      price: "2195",
+      brand: "Nike Sportswear",
+      size: "XS",
+      type: "Tops and T-Shirts",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/73d48e79-16a0-4c6a-bb4c-19417d4f50ed/liverpool-fc-2021-22-stadium-home-football-shirt-gcNpBV.png",
+      name: "Liverpool F.C. 2021/22 Stadium Home",
+      price: "4695",
+      brand: "Nike Sportswear",
+      size: "S",
+      type: "Tops and T-Shirts",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/a0aff5d7-598d-460f-ad32-ad8008b8dfda/dri-fit-rise-365-short-sleeve-running-top-TzvTdf.png",
+      name: "Nike Dri-FIT Rise 365",
+      price: "2495",
+      brand: "NikeLab",
+      size: "M",
+      type: "Tops and T-Shirts",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/i1-8b04783a-a028-4f67-a1ac-5598bb7f9088/flex-stride-18cm-2-in-1-running-shorts-kkKFDX.png",
+      name: "Nike Flex Stride",
+      price: "2995",
+      brand: "NikeLab",
+      size: "L",
+      type: "Shorts",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/4d686df6-b419-4854-9f09-bf82e33fbf05/flex-woven-training-shorts-NBsnx7.png",
+      name: "Nike Flex",
+      price: "1795",
+      brand: "Nike Pro",
+      size: "XL",
+      type: "Shorts",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/ab3c4101-1b2b-4184-8da9-01ab44a2bf5f/dri-fit-fast-1-2-length-running-tights-cPqH4x.png",
+      name: "Nike Dri-FIT Fast",
+      price: "1995",
+      brand: "Jordan",
+      size: "2XL",
+      type: "Trousers & Tights",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/0191777b-15ee-44a9-9336-03f7cbe32e94/training-trousers-T84sjx.png",
+      name: "Nike",
+      price: "2495",
+      brand: "Nike Pro",
+      size: "7-8.5",
+      type: "Trousers & Tights",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/4c109b8a-fac4-475e-aa53-a3dd09ad6c81/dri-fit-woven-training-jacket-323Tk5.png",
+      name: "Nike Dri-FIT",
+      price: "3495",
+      brand: "NikeLab",
+      size: "S(40)",
+      type: "Jackets & Gilets",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/5804c8f5-efd6-4863-bc1e-2a6df68cf13c/sportswear-club-french-terry-sweatshirt-BXBSKm.png",
+      name: "Nike Sportswear Club",
+      price: "2895",
+      brand: "Jordan",
+      size: "M(44)",
+      type: "Hoodies & Sweatshirts",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/de02328e-60ea-497c-ba05-3ab35e9a27df/sport-clash-training-hoodie-R0CGhq.png",
+      name: "Nike Therma-FIT Sport Clash",
+      price: "3995",
+      brand: "Nike Sportswear",
+      size: "L(48)",
+      type: "Hoodies & Sweatshirts",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a7b8c313-8a37-4dee-be4a-0d61041cd9e6/jordan-jumpman-gilet-KPX3f0.png",
+      name: "Jordan Jumpman",
+      price: "5495",
+      brand: "Jordan",
+      size: "XL(52)",
+      type: "Jackets & Gilets",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9bf86bc6-aa3f-4ff5-b3a0-3928ca1e96fc/jordan-dri-fit-air-statement-fleece-pullover-hoodie-fmt5dJ.png",
+      name: "Jordan Dri-FIT Air",
+      price: "4495",
+      brand: "Jordan",
+      size: "2XL(56)",
+      type: "Hoodies & Sweatshirts",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2631d749-3f5a-4f8d-b25c-bad4632d33c5/jordan-essentials-fleece-shorts-rJ9Ngf.png",
+      name: "Jordan Essentials",
+      price: "2295",
+      brand: "Jordan",
+      size: "XS",
+      type: "Shorts",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/61a71319-b296-4cb2-9d67-96447b0dcf1e/everyday-lightweight-training-no-show-socks-K5cbcM.png",
+      name: "Nike Everyday Lightweight",
+      price: "595",
+      brand: "Nike Pro",
+      size: "S",
+      type: "Socks",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fpsnczh9rlm6k2zflitg/everyday-lightweight-training-crew-socks-Gvl3WS.png",
+      name: "Nike Everyday Lightweight",
+      price: "595",
+      brand: "NikeLab",
+      size: "M",
+      type: "Socks",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/caaff434-102e-45f3-b8b4-9a757ac07e4c/dri-fit-run-division-rise-365-short-sleeve-running-top-gcgPkp.png",
+      name: "Nike Dri-FIT Run Division Rise 365",
+      price: "2995",
+      brand: "NikeLab",
+      size: "7-8.5",
+      type: "Tops and T-Shirts",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/11101919-c913-4be0-b0ac-c3261185b945/kyrie-irving-nets-statement-edition-2020-jordan-nba-swingman-jersey-f8Qf6h.png",
+      name: "Kyrie Irving Nets Statement Edition 2020",
+      price: "4995",
+      brand: "NikeLab",
+      size: "XL(52)",
+      type: "Compression & Baselayer",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ae82bf7b-9310-4dc4-a0ab-7c7aba949f08/solo-swoosh-t-shirt-2CFK7L.png",
+      name: "Nike Solo Swoosh",
+      price: "2195",
+      brand: "Nike Pro",
+      size: "2XL(56)",
+      type: "Tops and T-Shirts",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/47ab4f4d-5303-4d78-a3e8-68c56da02a83/nikecourt-dri-fit-advantage-tennis-polo-5VTt2P.png",
+      name: "NikeCourt Dri-FIT Advantage",
+      price: "2795",
+      brand: "Nike Sportswear",
+      size: "L(48)",
+      type: "Compression & Baselayer",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/640594c9-288b-4569-bfc0-6a5472cc912b/polo-liverpool-fc-slim-fit-polo-mjX7Tf.png",
+      name: "The Nike Polo Liverpool F.C.",
+      price: "3295",
+      brand: "Nike Sportswear",
+      size: "XS",
+      type: "Tracksuits",
+    },
+
+    {
+      category: "Clothing",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/40cfcfe1-46c8-4aa0-8e0b-c6410bc39048/dri-fit-academy-football-pants-p4fxCh.png",
+      name: "Nike Dri-FIT Academy",
+      price: "2495",
+      brand: "Nike Pro",
+      size: "S(40)",
+      type: "Trousers & Tights",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/64c0bc7b-8527-4aff-a22e-9fca82aa7189/heritage-duffel-bag-KNfnRP.png",
+      name: "Nike Heritage",
+      price: "3495",
+      brand: "ACG",
+      size: "",
+      type: "Bags & Backpacks",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/99bf25b4-ec8e-40d2-aca9-13d41feb66f3/jordan-utility-beanie-hwKh94.png",
+      name: "Jordan",
+      price: "1695",
+      brand: "Jordan",
+      size: "",
+      type: "Hats, Visors & Headbands",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4761716c-5762-48f2-b0ed-556ab8c30405/liverpool-fc-pitch-football-sGGQKG.png",
+      name: "Liverpool F.C. Pitch",
+      price: "1795",
+      brand: "Nike Sportswear",
+      size: "",
+      type: "Balls",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/4afbb4ac-3483-4022-8c85-967667e890be/mercurial-lite-football-shinguards-2VccDq.png",
+      name: "Nike Mercurial Lite",
+      price: "1595",
+      brand: "Nike Sportswear",
+      size: "",
+      type: "Pads, Guards & Protection",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/f016b996-d009-4dbd-ac65-917b2d524dbb/brasilia-winterized-training-duffel-bag-9PRV2D.png",
+      name: "Nike Brasilia",
+      price: "3495",
+      brand: "NikeLab",
+      size: "",
+      type: "Bags & Backpacks",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/91c4b38b-b1eb-4eb1-b3c3-07c44bcd0d3b/heritage-cross-body-bag-Qf2sqq.png",
+      name: "Nike Heritage",
+      price: "895",
+      brand: "NikeLab",
+      size: "",
+      type: "Bags & Backpacks",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/17f3d515-f8a9-42a4-aaa3-16a34674990f/liverpool-fc-strike-football-P2h5gw.png",
+      name: "Liverpool F.C. Strike",
+      price: "1995",
+      brand: "ACG",
+      size: "",
+      type: "Balls",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/fcb2a341-640a-4409-9e2b-90ec12618ff3/dri-fit-tailwind-fast-running-cap-gkL8G6.png",
+      name: "Nike Dri-FIT Tailwind Fast",
+      price: "1195",
+      brand: "NIkeLab",
+      size: "",
+      type: "Hats, Visors & Headbands",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/9c43847b-cbfd-47a8-a7d4-f44e1ce1f3b5/utility-speed-graphic-training-backpack-lGSPgQ.png",
+      name: "Nike Utility Speed",
+      price: "4495",
+      brand: "ACG",
+      size: "",
+      type: "Bags & Backpacks",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/8aed18f1-2f30-4fbe-87d2-f926cab0dd82/jordan-cuffed-beanie-S8rfXl.png",
+      name: "Jordan",
+      price: "1195",
+      brand: "Jordan",
+      size: "",
+      type: "Hats, Visors & Headbands",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/203298cc-2d8e-4821-b12a-b5e5a5629b80/sb-icon-skate-hip-pack-fmtmhr.png",
+      name: "Nike SB Icon",
+      price: "1695",
+      brand: "NikeLab",
+      size: "",
+      type: "Bags & Backpacks",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/53698619-125e-406d-a9c9-5c5d9b3c2928/goalkeeper-match-football-gloves-0S4K6P.png",
+      name: "Nike Goalkeeper Match",
+      price: "1795",
+      brand: "Nike Sportswear",
+      size: "",
+      type: "Gloves & Mitts",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c2b77380-70dd-4429-8854-0322228c418d/venturer-face-mask-7FpwM7.png",
+      name: "Nike Venturer",
+      price: "2995",
+      brand: "ACG",
+      size: "",
+      type: "Pads, Guards & Protection",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/i1-74fffc9d-481d-4537-8c55-a3c858d494a0/utility-heat-training-backpack-gK6C9j.png",
+      name: "Nike Utility Heat",
+      price: "3995",
+      brand: "Nike Sportswear",
+      size: "",
+      type: "Hats, Visors & Headbands",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b7e6d6df-20ef-4b53-bb5d-619a54a5d6ba/sportswear-bucket-hat-pnF01f.png",
+      name: "Nike Sportswear",
+      price: "1595",
+      brand: "Nike Sportswear",
+      size: "",
+      type: "Hats, Visors & Headbands",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/67ceba6c-dab7-4fda-a8de-9c6e1adf1d0f/liverpool-fc-dri-fit-reversible-football-bucket-hat-FZc212.png",
+      name: "Liverpool F.C.",
+      price: "1695",
+      brand: "NikeLab",
+      size: "",
+      type: "Hats, Visors & Headbands",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc19ce9d-6e9c-4a3f-9546-e46647bb5168/liverpool-fc-skills-football-W6BG5g.png",
+      name: "Liverpool F.C. Skills",
+      price: "1295",
+      brand: "Nike Sportswear",
+      size: "",
+      type: "Balls",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-80617fe8-f73a-44fe-95ac-03f4a4dc9320/utility-training-gymsack-W3j0P1.png",
+      name: "Nike Utility",
+      price: "1395",
+      brand: "ACG",
+      size: "",
+      type: "Bags & Backpacks",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/12d59eb0-cbe0-4e14-b526-694951252142/air-tech-hip-pack-GXwXF4.png",
+      name: "Nike Air Tech",
+      price: "2295",
+      brand: "NikeLab",
+      size: "",
+      type: "Bags & Backpacks",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ddc8f98a-57ee-47da-b536-a9174a338887/sportswear-utility-patch-beanie-FvCClB.png",
+      name: "Jordan",
+      price: "1695",
+      brand: "Jordan",
+      size: "",
+      type: "Hats, Visors & Headbands",
+    },
+
+    {
+      category: "Gear",
+      image_url:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f68a4f7e-e1ac-4ed7-bfa7-2e9769fdb92b/paris-saint-germain-graphic-bucket-hat-rnr7xm.png",
+      name: "Paris Saint-Germain",
+      price: "1695",
+      brand: "Jordan",
+      size: "",
+      type: "Hats, Visors & Headbands",
+    },
+  ]; 
+  var body = document.querySelector("body");
+  var maindiv = document.getElementById("container");
+  var gearlist = productList.filter(function (items){
+      if (items.category == "Gear"){
+        return items;
+      }
+  })
+  localStorage.setItem("gearlist", JSON.stringify(gearlist));
+  var product = JSON.parse(localStorage.getItem("gearlist")) || [];
+  displayitems(product);
+  function filter() {
+    var Sort = document.getElementById("sort").value;
+    if (Sort == "high") {
+      for (var i = 0; i < product.length - 1; i++) {
+        for (var j = i + 1; j < product.length; j++) {
+          if (product[i].price < product[j].price) {
+            var temp = product[i];
+            product[i] = product[j];
+            product[j] = temp;
+          }
+        }
+      }
+      sortedarr = product;
+      // var sortedarr = product.sort(function (a, b) {
+      //   return Number(b.price) - Number(a.price);
+      // });
+      displayitems(sortedarr);
+    } else if (Sort == "low") {
+      for (var i = 0; i < product.length - 1; i++) {
+        for (var j = 0; j < product.length - i - 1; j++) {
+          if (product[j].price > product[j + 1].price) {
+            var temp = product[j];
+            product[j] = product[j + 1];
+            product[j + 1] = temp;
+          }
+        }
+      }
+      sortedarr = product;
+      // var sortedarr = product.sort(function (a, b) {
+      //   return Number(a.price) - Number(b.price);
+      // });
+      displayitems(sortedarr);
+    } else if (Sort == "newest") {
+      var sortedarr = product.sort(function (a, b) {
+        return a.name > b.name ? -1 : a.name < b.name ? 1 : 0;
+      });
+      displayitems(sortedarr);
+    } else if (Sort == "featured") {
+      var sortedarr = JSON.parse(localStorage.getItem("productlist"));
+      displayitems(sortedarr);
+    }
+  }
+  function displayitems(product) {
+    document.getElementById("container").innerHTML = "";
+
+    product.map(function (item, index) {
+      var itemdiv = document.createElement("div");
+      itemdiv.setAttribute("class", "item-box");
+
+      var imgdiv = document.createElement("div");
+      imgdiv.setAttribute("class", "img-box");
+      var img = document.createElement("img");
+      img.setAttribute("src", item.image_url);
+      imgdiv.append(img);
+
+      var textdiv = document.createElement("div");
+      textdiv.setAttribute("class", "text-box");
+      var content = document.createElement("div");
+      content.setAttribute("class", "content");
+      var name = document.createElement("h3");
+      name.textContent = item.name;
+      var brand = document.createElement("h3");
+      brand.textContent = item.brand;
+      var type = document.createElement("h3");
+      type.textContent = item.type;
+
+      var price = document.createElement("div");
+      price.setAttribute("class", "price-box");
+      price.textContent = `₹${item.price}`;
+
+      var discount = document.createElement("div");
+      discount.setAttribute("class", "discount-box");
+      discount.textContent = "19% off";
+      content.append(name, brand, type, price, discount);
+      textdiv.append(content);
+
+      itemdiv.append(imgdiv, textdiv);
+      maindiv.append(itemdiv);
+    });
+    document.getElementById(
+      "heading"
+    ).textContent = `Sales (${product.length})`;
+  }
+
+
+  // top bar js
+
+  var menu = document.getElementById("menu-items")
+document.getElementById("menu-bar-icon").addEventListener("click",function(){
+  menu.style.right = "0px";
+})
+document.getElementById("close-menu").addEventListener("click",function(){
+  menu.style.right = "-400px";
+})
+
+var search = document.querySelector("#search-bar");
+var Cross = document.querySelector("#cross-btn")
+var topbar = document.querySelector("#top-bar-container");
+function expand(){
+    search.classList.add('expand');
+    Cross.style.display = "block";
+    topbar.style.height = "0vh";
+    topbar.style.transition = "0.3s ease-in-out";
+    
+}
+function cross(){
+    search.classList.remove('expand');
+    Cross.style.display = "none";
+    topbar.style.height = "4vh";
+    topbar.style.transition = "0.3s ease-in-out";
+}
+var filterDiv = document.querySelector(".product-filter");
+function hide(){
+  filterDiv.classList.toggle('hideAndshow');
+  filterDiv.style.transition = "0.4s ease-in-out";
+}
+
+
+// filter & sorting js
+
+function clothli1(){
+    var clothingfilter = productList.filter(function(items){
+      if (items.type == "Tops and T-Shirts"){
+        return items;
+      }
+    })
+  displayitems(clothingfilter);
+}
+function clothli2(){
+    var clothingfilter2 = productList.filter(function(items){
+      if (items.type == "Shorts"){
+        return items;
+      }
+    })
+  displayitems(clothingfilter2);
+}
+function clothli3(){
+  var clothingfilter3 = productList.filter(function(items){
+    if (items.type == "Trousers & Tights"){
+      return items;
+    }
+  })
+  displayitems(clothingfilter3);
+}
+function clothli4(){
+    var clothingfilter = productList.filter(function(items){
+      if (items.type == "Jackets & Gilets"){
+        return items;
+      }
+    })
+  displayitems(clothingfilter);
+}
+function clothli5(){
+    var clothingfilter = productList.filter(function(items){
+      if (items.type == "Hoodies & Sweatshirts"){
+        return items;
+      }
+    })
+  displayitems(clothingfilter);
+}
+function clothli6(){
+    var clothingfilter = productList.filter(function(items){
+      if (items.type == "Socks"){
+        return items;
+      }
+    })
+  displayitems(clothingfilter);
+}
+function clothli7(){
+    var clothingfilter = productList.filter(function(items){
+      if (items.type == "Compression & Baselayer"){
+        return items;
+      }
+    })
+  displayitems(clothingfilter);
+}
+function clothli8(){
+    var clothingfilter = productList.filter(function(items){
+      if (items.type == "Tracksuits"){
+        return items;
+      }
+    })
+  displayitems(clothingfilter);
+}
+function clothli9(){
+    var clothingfilter = productList.filter(function(items){
+      if (items.category == "Gear"){
+        return items;
+      }
+    })
+  displayitems(clothingfilter);
+}
+
+function selectbrand1(){
+  var brandcheck = document.querySelector("#Nike-Sportswear:checked").value;
+    var brand = productList.filter(function (items){
+      if (brandcheck==items.brand){
+        return items;
+      }
+    })
+  
+  displayitems(brand);
+}
+function selectbrand2(){
+  var brandcheck = document.querySelector("#Jordan:checked").value;
+    var brand = productList.filter(function (items){
+      if (brandcheck==items.brand){
+        return items;
+      }
+    })
+  
+  displayitems(brand);
+}
+function selectbrand3(){
+  var brandcheck = document.querySelector("#NikeLab:checked").value;
+    var brand = productList.filter(function (items){
+      if (brandcheck==items.brand){
+        return items;
+      }
+    })
+  
+  displayitems(brand);
+}
+function selectbrand4(){
+  var brandcheck = document.querySelector("#Nike-Pro:checked").value;
+    var brand = productList.filter(function (items){
+      if (brandcheck==items.brand){
+        return items;
+      }
+    })
+  
+  displayitems(brand);
+}
+function selectbrand5(){
+  var brandcheck = document.querySelector("#ACG:checked").value;
+    var brand = productList.filter(function (items){
+      if (brandcheck==items.brand){
+        return items;
+      }
+    })
+  
+  displayitems(brand);
+}
+function selectbrand6(){
+  var brandcheck = document.querySelector("#Nike-By-You:checked").value;
+    var brand = productList.filter(function (items){
+      if (brandcheck==items.brand){
+        return items;
+      }
+    })
+  
+  displayitems(brand);
+}
+function sports1(){
+  var sportscheck = document.querySelector("#Lifestyle:checked").value;
+  var sport = productList.filter(function(items){
+    if (sportscheck == items.type){
+      return items;
+    }
+  })
+  displayitems(sport);
+}
+function sports2(){
+  var sportscheck = document.querySelector("#Running:checked").value;
+  var sport = productList.filter(function(items){
+    if (sportscheck == items.type){
+      return items;
+    }
+  })
+  displayitems(sport);
+}
+function sports3(){
+  var sportscheck = document.querySelector("#Training-and-Gym:checked").value;
+  var sport = productList.filter(function(items){
+    if (sportscheck == items.type){
+      return items;
+    }
+  })
+  displayitems(sport);
+}
+function sports4(){
+  var sportscheck = document.querySelector("#Jordan:checked").value;
+  var sport = productList.filter(function(items){
+    if (sportscheck == items.type){
+      return items;
+    }
+  })
+  displayitems(sport);
+}
+function sports5(){
+  var sportscheck = document.querySelector("#Athletics:checked").value;
+  var sport = productList.filter(function(items){
+    if (sportscheck == items.type){
+      return items;
+    }
+  })
+  displayitems(sport);
+}
+function sports6(){
+  var sportscheck = document.querySelector("#Skateboarding:checked").value;
+  var sport = productList.filter(function(items){
+    if (sportscheck == items.type){
+      return items;
+    }
+  })
+  displayitems(sport);
+}
+function sports7(){
+  var sportscheck = document.querySelector("#Golf:checked").value;
+  var sport = productList.filter(function(items){
+    if (sportscheck == items.type){
+      return items;
+    }
+  })
+  displayitems(sport);
+}
+function sports8(){
+  var sportscheck = document.querySelector("#Tennis:checked").value;
+  var sport = productList.filter(function(items){
+    if (sportscheck == items.type){
+      return items;
+    }
+  })
+  displayitems(sport);
+}
+function sports9(){
+  var sportscheck = document.querySelector("#Walking:checked").value;
+  var sport = productList.filter(function(items){
+    if (sportscheck == items.type){
+      return items;
+    }
+  })
+  displayitems(sport);
+}
+function sports10(){
+  var sportscheck = document.querySelector("#Football:checked").value;
+  var sport = productList.filter(function(items){
+    if (sportscheck == items.type){
+      return items;
+    }
+  })
+  displayitems(sport);
+}
+function sports11(){
+  var sportscheck = document.querySelector("#Basketball:checked").value;
+  var sport = productList.filter(function(items){
+    if (sportscheck == items.type){
+      return items;
+    }
+  })
+  displayitems(sport);
+}
+function sort1(){
+    var sortedarr = JSON.parse(localStorage.getItem("productlist"));
+    displayitems(sortedarr);
+}
+function sort2(){
+    var sortedarr = product.sort(function (a, b) {
+      return a.name > b.name ? -1 : a.name < b.name ? 1 : 0;
+    });
+    displayitems(sortedarr);
+}
+function sort3(){
+  for (var i = 0; i < product.length - 1; i++) {
+    for (var j = i + 1; j < product.length; j++) {
+      if (product[i].price < product[j].price) {
+        var temp = product[i];
+        product[i] = product[j];
+        product[j] = temp;
+      }
+    }
+  }
+  sortedarr = product;
+  displayitems(sortedarr);
+}
+function sort4(){
+  for (var i = 0; i < product.length - 1; i++) {
+    for (var j = i + 1; j < product.length; j++) {
+      if (product[i].price > product[j].price) {
+        var temp = product[i];
+        product[i] = product[j];
+        product[j] = temp;
+      }
+    }
+  }
+  sortedarr = product;
+  displayitems(sortedarr);
+}
+var ADDtoCard=JSON.parse(localStorage.getItem('ADDToCard'))||[];
+  function displayitems(product) {
+    document.getElementById("container").innerHTML = "";
+
+    product.map(function (item, index) {
+      var itemdiv = document.createElement("div");
+      itemdiv.setAttribute("class", "item-box");
+
+      var imgdiv = document.createElement("div");
+      imgdiv.setAttribute("class", "img-box");
+      var img = document.createElement("img");
+      img.setAttribute("src", item.image_url);
+      imgdiv.append(img);
+
+      var textdiv = document.createElement("div");
+      textdiv.setAttribute("class", "text-box");
+      var content = document.createElement("div");
+      content.setAttribute("class", "content");
+      var name = document.createElement("h3");
+      name.textContent = item.name;
+      var brand = document.createElement("h3");
+      brand.textContent = item.brand;
+      var type = document.createElement("h3");
+      type.textContent = item.type;
+
+      var price = document.createElement("div");
+      price.setAttribute("class", "price-box");
+      price.textContent = "₹"+item.price;
+
+      var discount = document.createElement("div");
+      discount.setAttribute("class", "discount-box");
+      discount.textContent = "19% off";
+      content.append(name, brand, type, price, discount);
+      textdiv.append(content);
+
+      itemdiv.append(imgdiv, textdiv);
+      maindiv.append(itemdiv);
+      
+      itemdiv.addEventListener('dblclick',function(){
+        
+        var count=0
+        for(var i=0;i<ADDtoCard.length;i++)
+        {
+          if(item==ADDtoCard[i])
+          {
+            alert("Already in the card")
+            count=1; 
+          }
+        }
+        if(count==0)
+        {
+        ADDtoCard.push(item)
+        localStorage.setItem("ADDToCard",JSON.stringify(ADDtoCard))
+        alert("ADD To Card")
+        ADDtoCard.map(function(item,i){
+document.getElementById('CArt').textContent=i+1;
+        })
+        }
+      })
+    
+    });
+    document.getElementById(
+      "heading"
+    ).textContent = `Sales (${product.length})`;
+  }
+  var addtocart=JSON.parse(localStorage.getItem('ADDToCard'))
+  addtocart.map(function(item,i){
+    document.getElementById('CArt').textContent=i+1;
+  })
+
+  var favorites=JSON.parse(localStorage.getItem('Favorites'))
+  favorites.map(function(item,i){
+      document.getElementById("FAV").textContent=i+1
+  })
+</script>

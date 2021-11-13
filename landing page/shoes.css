@@ -1,0 +1,710 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#top-bar-container {
+  background-color: #f5f5f5;
+  height: 4.5vh;
+}
+#top-bar {
+  display: flex;
+  width: 95vw;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 5px 0 5px 0;
+}
+#top-bar img {
+  width: 28px;
+  height: auto;
+}
+#top-bar ul {
+  display: flex;
+  list-style: none;
+}
+#top-bar ul a {
+  color: black;
+  font-style: none;
+  text-decoration: none;
+}
+#top-bar ul li {
+  padding-left: 15px;
+  color: black;
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* nav-bar */
+nav {
+  height: 6vh;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+#nav-details {
+  width: 95vw;
+  margin: auto;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+#nav-logo {
+  flex: 1;
+}
+#nav-bar {
+  flex: 1.5;
+}
+#nav-search {
+  flex: 1;
+  margin-left: 20px;
+}
+#nav-details img {
+  width: 35px;
+  height: auto;
+}
+#nav-logo img {
+  width: 90px;
+  height: auto;
+}
+#nav-bar ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+#nav-bar ul li {
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#nav-bar ul li:hover {
+  border-bottom: 3px solid black;
+}
+#nav-bar ul li a {
+  text-decoration: none;
+  color: black;
+}
+#nav-search {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+#search-bar {
+  flex-basis: 60%;
+  background-color: #f5f5f5;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.expand {
+  position: absolute;
+  top: -6px;
+  height: 50px;
+  right: 35%;
+  margin: 0;
+  width: 73vw;
+  border-radius: 25px;
+}
+
+#search-icon {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#search-bar:hover {
+  background-color: #f1ecec;
+}
+#search-bar input {
+  width: 60%;
+  height: 100%;
+  margin: 0;
+  border: none;
+  padding-left: 30px;
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  background-color: transparent;
+  outline: none;
+  position: relative;
+  top: -6px;
+}
+#search-bar form {
+  background-color: transparent;
+}
+#search-bar:focus {
+  outline: none;
+}
+#search-bar form button {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  left: 7px;
+  top: 3px;
+}
+#search-bar button {
+  width: fit-content;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #f1ecec;
+  border: none;
+  outline: none;
+  position: relative;
+  left: 0px;
+}
+#search-bar button i {
+  width: 50px;
+}
+#menu-bar-icon {
+  cursor: pointer;
+}
+#CArt {
+  position: relative;
+  right: 25px;
+  bottom: 7px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#sales-page {
+  padding-top: 150px;
+  width: 94vw;
+  margin: auto;
+  height: max-content;
+}
+#heading {
+  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  flex: 0.7;
+}
+#top-sales-box {
+  display: flex;
+  justify-content: space-between;
+}
+#cloth-sorting-bar {
+  display: none;
+}
+#filter-box {
+  display: flex;
+  justify-content: space-around;
+  flex: 0.3;
+}
+#filter-box div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+#filter-box div:nth-child(1) {
+  padding: 10px;
+}
+#filter-box div span img {
+  width: 20px;
+  height: auto;
+  padding-left: 10px;
+}
+#filter-box div span {
+  font-size: 23px;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#sort {
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: none;
+  font-size: 23px;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+  width: fit-content;
+  margin-right: 10px;
+  transition: 0.3s ease-in-out;
+}
+#sort option {
+  border-radius: 5px;
+  border: 1px solid peachpuff;
+}
+#top-sales-box {
+  position: sticky;
+  top: 6vh;
+  background-color: white;
+  z-index: 2;
+}
+.sales-content-box {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+.product-filter {
+  width: 20vw;
+  /* background-color: wheat; */
+  height: 100%;
+  margin-right: 10px;
+  padding: 5px;
+}
+.clothing-type-filter {
+  margin: 20px 0px;
+}
+.clothing-type-filter ul {
+  list-style: none;
+}
+.clothing-type-filter ul li {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 5px;
+  cursor: pointer;
+}
+.brand-type-filter h1,
+.sports-type-filter h1 {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.brand-type-filter > div,
+.sports-type-filter > div,
+.sort-type-filter > div {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.brand-type-filter > div > input,
+.sports-type-filter > div > form > input,
+.sort-type-filter > div > input {
+  margin: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.brand-type-filter > div > label,
+.sports-type-filter > div > form > label,
+.sort-type-filter > div > label {
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+.sort-type-filter {
+  display: none;
+}
+/* js class */
+.hideAndshow {
+  width: 0px;
+  position: relative;
+  left: -300px;
+  transition: 0.4s ease-in-out;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: fit-content;
+  gap: 30px;
+  width: auto;
+  height: 100vh;
+  overflow-y: scroll;
+}
+#container::-webkit-scrollbar {
+  width: 0px;
+}
+#container::-webkit-scrollbar-track {
+  color: gray;
+}
+.item-box {
+  height: 80%;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.content h3 {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  padding-top: 8px;
+}
+.content > h3:nth-child(2),
+.content > h3:nth-child(3) {
+  color: gray;
+}
+.price-box,
+.discount-box {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.price-box {
+  font-size: 19px;
+}
+.discount-box {
+  color: rgb(49, 177, 49);
+}
+
+/* footer  */
+.space {
+  height: 20vh;
+  width: 100%;
+}
+footer {
+  width: 100%;
+  height: 40vh;
+  background-color: #111111;
+}
+.footer-container {
+  max-width: 1500px;
+  width: 95%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.upper-footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 20px;
+  padding-top: 30px;
+  height: 90%;
+}
+.footer-links {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 10px;
+  flex: 0.7;
+}
+.footer-links div ul {
+  list-style: none;
+}
+.footer-links div ul li {
+  padding: 4px;
+}
+.footer-links div:nth-child(2) ul li,
+.footer-links div:nth-child(3) ul li {
+  padding: 8px;
+}
+.footer-links div ul li a {
+  color: rgb(182, 179, 179);
+  text-decoration: none;
+}
+.footer-links div ul li {
+  font-weight: 400;
+  color: rgb(182, 179, 179);
+}
+.footer-links div:nth-child(1) ul li a,
+.footer-links div ul li:nth-child(1) a {
+  color: white;
+  font-weight: 800;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.footer-links div ul li a:hover {
+  color: white;
+}
+
+.social-icons ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.social-icons ul li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 254, 254, 0.589);
+  margin: 10px;
+}
+.social-icons ul li:hover {
+  background-color: white;
+}
+.social-icons ul li a img {
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+  border: none;
+}
+.lower-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  padding-top: 20px;
+}
+.cpright-col {
+  display: flex;
+  margin-top: 20px;
+}
+.cpright-col div i {
+  color: gray;
+  cursor: pointer;
+}
+.cpright-col div span {
+  color: gray;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.about-links ul {
+  display: flex;
+}
+.about-links ul li {
+  padding: 20px;
+  font-weight: 300;
+  font-size: 13px;
+}
+.about-links ul li a {
+  color: rgb(165, 164, 164);
+  text-decoration: none;
+}
+.about-links ul li a:hover {
+  color: white;
+}
+.last {
+  height: 3vh;
+  width: 100%;
+}
+
+@media screen and (min-width: 1150px) {
+  #search-icon,
+  #icon-div {
+    display: none;
+  }
+  #menu-items {
+    display: none;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #top-bar-container {
+    display: none;
+  }
+  #nav-bar {
+    display: none;
+  }
+  #nav-search {
+    display: flex;
+    justify-content: flex-end;
+  }
+  #nav-search > div {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #search-bar,
+  #fav-icon {
+    display: none;
+  }
+  #menu-items {
+    position: fixed;
+    width: 400px;
+    background-color: white;
+    height: 100vh;
+    top: 0;
+    right: 0px;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow: scroll;
+    transition: all ease-in-out;
+    transition-duration: 0.4s;
+  }
+  #menu-items > div:nth-child(1) {
+    display: inline-block;
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: 90%;
+  }
+  #menu-items > div:nth-child(1) img {
+    width: 20px;
+    height: auto;
+  }
+  #menu-items ul {
+    list-style: none;
+  }
+  #menu-items ul li {
+    font-size: 25px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 30px;
+  }
+  #menu-items a {
+    color: #111111;
+  }
+  #menu-items > div {
+    margin-top: 60px;
+  }
+  #menu-items > div span {
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    padding-left: 20px;
+    vertical-align: middle;
+  }
+
+  #menu-items ul li span a img {
+    width: 20px;
+    height: auto;
+  }
+  #menu-items ul li span:nth-child(2) {
+    float: right;
+  }
+  #menu-items ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  .menu-signup {
+    margin-top: 60px;
+  }
+  .menu-signup p {
+    font-size: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: gray;
+  }
+  .menu-signup p span {
+    color: #111111;
+    font-size: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0;
+  }
+  .menu-signup div {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu-signup div button {
+    width: 150px;
+    height: 50px;
+    border-radius: 28px;
+    background-color: #111111;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: none;
+  }
+  .menu-signup div button:nth-child(2) {
+    background-color: white;
+    color: black;
+  }
+  .other-opt {
+    padding-top: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-around;
+  }
+  .other-opt div span {
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  #nav-details img {
+    width: 30px;
+    height: auto;
+  }
+  #nav-logo a img {
+    width: 60px;
+    height: auto;
+  }
+  #nav-bar ul li {
+    padding: 15px;
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  #container {
+    grid-template-columns: 1fr 1fr;
+  }
+  #sort {
+    display: none;
+  }
+  #filter-box {
+    justify-content: flex-end;
+  }
+  .sort-type-filter {
+    display: block;
+  }
+  .clothing-type-filter ul li {
+    font-size: 15px;
+  }
+  .brand-type-filter > div > label,
+  .sports-type-filter > div > form > label,
+  .sort-type-filter > div > label {
+    font-size: 15px;
+  }
+  .brand-type-filter h1,
+  .sports-type-filter h1,
+  .sort-type-filter h1 {
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+  }
+  .sort-type-filter {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer {
+    height: fit-content;
+  }
+  .upper-footer {
+    grid-template-columns: auto;
+  }
+  .footer-links {
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 30px;
+    flex: 0.7;
+  }
+  .social-icons ul {
+    justify-content: flex-start;
+    margin: 20px 0px;
+  }
+  .social-icons ul li {
+    padding: 20px;
+  }
+  .footer-links > div + div {
+    padding-top: 20px;
+    border-top: 1px solid rgba(128, 128, 128, 0.637);
+  }
+
+  .footer-links > div:nth-child(1) {
+    margin-top: 30px;
+  }
+  .footer-links div ul li {
+    padding: 8px;
+  }
+  .lower-footer {
+    flex-direction: column;
+    border: none;
+  }
+  .cpright-col {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cpright-col div i {
+    color: white;
+  }
+  .cpright-col div span {
+    color: white;
+    padding-right: 25px;
+  }
+  .about-links ul {
+    flex-direction: column;
+  }
+  .about-links ul li {
+    padding-left: 0px;
+  }
+}

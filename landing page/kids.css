@@ -1,0 +1,978 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+  width: 100%;
+  height: max-content;
+}
+
+/* top bar */
+
+#top-bar-container {
+  background-color: #f5f5f5;
+  height: 4.5vh;
+}
+#top-bar {
+  display: flex;
+  width: 95vw;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 5px 0 5px 0;
+}
+#top-bar img {
+  width: 28px;
+  height: auto;
+}
+#top-bar ul {
+  display: flex;
+  list-style: none;
+}
+#top-bar ul a {
+  color: black;
+  font-style: none;
+  text-decoration: none;
+}
+#top-bar ul li {
+  padding-left: 15px;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* nav-bar */
+nav {
+  height: 6vh;
+  background-color: white;
+  position: sticky;
+}
+#nav-details {
+  width: 95vw;
+  margin: auto;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+#nav-logo {
+  flex: 1;
+}
+#nav-bar {
+  flex: 1.5;
+}
+#nav-search {
+  flex: 1;
+  margin-left: 20px;
+}
+#nav-details img {
+  width: 35px;
+  height: auto;
+}
+#nav-logo img {
+  width: 90px;
+  height: auto;
+}
+#nav-bar ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+#nav-bar ul li {
+  padding: 20px;
+  font-size: 20px;
+}
+#nav-bar ul li:hover {
+  border-bottom: 3px solid black;
+}
+#nav-bar ul li a {
+  text-decoration: none;
+  color: black;
+}
+#nav-search {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+#search-bar {
+  flex-basis: 60%;
+  background-color: #f5f5f5;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  /* transition: width 1s; */
+}
+.expand {
+  position: absolute;
+  top: -6px;
+  height: 50px;
+  right: 35%;
+  margin: 0;
+  width: 73vw;
+  border-radius: 25px;
+  /* transition-duration: 2s;
+        transition-timing-function: linear; */
+}
+
+#search-icon {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#search-bar:hover {
+  background-color: #f1ecec;
+}
+#search-bar input {
+  width: 60%;
+  height: 100%;
+  margin: 0;
+  border: none;
+  padding-left: 30px;
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  background-color: transparent;
+  outline: none;
+  position: relative;
+  top: -6px;
+}
+#search-bar form {
+  background-color: transparent;
+}
+#search-bar:focus {
+  outline: none;
+}
+#search-bar form button {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  left: 7px;
+  top: 3px;
+}
+#search-bar button {
+  width: fit-content;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #f1ecec;
+  border: none;
+  outline: none;
+  color: #111111;
+  position: relative;
+  left: 0px;
+}
+#search-bar button i {
+  width: 50px;
+}
+#menu-bar-icon {
+  cursor: pointer;
+}
+
+/* ads */
+.ads {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 6vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ads p {
+  font-family: 600;
+  font-size: 16px;
+  color: black;
+}
+.ads span {
+  text-decoration: underline;
+}
+
+/* Men's category navbar */
+#men-page-navbar {
+  height: 4vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 4vw;
+  margin: 3vh 0px;
+  position: sticky;
+  top: 0px;
+}
+#men-page-navbar div h1 {
+  font-size: 22px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+#men-page-navbar div {
+  width: 30vw;
+}
+
+/* main-container */
+.main-container {
+  height: fit-content;
+  width: 100vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box img {
+  width: 100%;
+}
+.box div {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+.box div h1 {
+  font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 3.1rem;
+}
+.box div p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 10px;
+}
+.box div button {
+  width: 120px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  border: none;
+  margin-top: 30px;
+}
+.box div button a {
+  color: white;
+  text-decoration: none;
+}
+
+/* For Your Workout & Beyond */
+
+.latest-box {
+  margin-top: 80px;
+  width: 100%;
+  padding-right: 1.5vw;
+  padding-left: 1.5vw;
+}
+.latest-box h1 {
+  height: 65px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.latest-box > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+.latest-box > div > div {
+  height: 900px;
+  padding-left: 35px;
+  padding-bottom: 35px;
+}
+.latest-box > div > div:nth-child(1) {
+  background-image: url(https://static.nike.com/a/images/h_900,c_limit/ae3f172e-2369-4503-a409-ce7287fbd56e/nike-kids.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.latest-box > div > div h3 {
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
+}
+.latest-box > div > div:nth-child(2) {
+  background-image: url(https://static.nike.com/a/images/h_900,c_limit/f1da114c-72d2-4402-9a28-33e6e5449b17/nike-kids.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.latest-box > div > div button {
+  margin-top: 20px;
+  height: 50px;
+  width: 110px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 25px;
+  border: none;
+}
+.latest-box > div > div button a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+.latest-box > div > div:nth-child(2) button {
+  background-color: black;
+}
+.latest-box > div > div:nth-child(2) button a {
+  color: white;
+}
+.latest-box > div > div button:hover {
+  background-color: rgba(255, 255, 255, 0.541);
+}
+.latest-box > div > div:nth-child(2) button:hover {
+  background-color: rgba(0, 0, 0, 0.829);
+}
+
+/* New Arrivals */
+/* featured footwear */
+#footwear-section {
+  width: fit-content;
+  height: fit-content;
+  margin: 65px 0px;
+  display: flex;
+  border: 1px solid transparent;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#footwear-section > div:nth-child(1) {
+  display: flex;
+  width: 95%;
+  gap: 70%;
+  align-items: center;
+}
+#footwear-section > div:nth-child(1) > div:nth-child(2) {
+  display: flex;
+  justify-content: inherit;
+  margin-right: 30px;
+}
+#footwear-section > div:nth-child(1) > div:nth-child(2) > div {
+  height: 70px;
+  width: 70px;
+  margin: 20px;
+  background-color: #f5f5f5;
+  color: black;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footwear-section > div:nth-child(1) > div:nth-child(2) > div:hover {
+  background-color: #f1ecec;
+}
+#footwear-section div div h1 {
+  font-weight: 500;
+  width: 300px;
+  height: fit-content;
+  font-size: 1.8rem;
+  color: black;
+}
+.slider-div {
+  width: auto;
+  overflow-x: hidden;
+}
+#shoes-slider {
+  width: 100vw;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(21, auto);
+  gap: 20px;
+  position: relative;
+  transition: all ease-in-out;
+  transition-duration: 0.5s;
+}
+.shoe-div {
+  height: fit-content;
+  width: 600px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.shoe-div img {
+  width: 100%;
+  height: auto;
+}
+.shoe-content {
+  display: flex;
+  justify-content: space-between;
+}
+.shoe-name,
+.shoe-price {
+  width: fit-content;
+}
+.shoe-name > h3,
+.shoe-price > h3 {
+  font-weight: 500;
+  font-size: 19px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #111111;
+  padding: 5px 0px;
+}
+.shoe-name > h3 + h3 {
+  color: gray;
+  font-weight: 400;
+}
+/* The Latest  */
+.box3 {
+  margin-top: 30px;
+}
+.box3 h1 {
+  height: 60px;
+  color: black;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 60px;
+}
+
+/* The Trending column */
+.yoga-box {
+  margin: 50px 0px;
+}
+
+/* More Nike Column */
+
+#morenike {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.cat-box {
+  display: grid;
+  height: 600px;
+  width: 100%;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+.cat-box > div:nth-child(1) {
+  background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_816,c_limit/3cb8dce9-2b1d-4e6c-b85b-97a34ef1aaf8/nike-kids.jpg);
+}
+.cat-box > div:nth-child(2) {
+  background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_424,c_limit/229b16b0-92d9-4ad7-8109-99c8e778b6bd/nike-kids.jpg);
+}
+.cat-box > div:nth-child(3) {
+  background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_424,c_limit/3c8a94a1-5aa3-4983-b858-330c60636724/nike-kids.jpg);
+}
+
+.catgory {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.catgory div {
+  width: 25%;
+  position: relative;
+  top: 500px;
+  left: 50px;
+  margin: 0;
+}
+.catgory div button {
+  background-color: white;
+  color: black;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 10px;
+}
+.catgory div button:hover {
+  background-color: rgba(255, 255, 255, 0.568);
+}
+
+.space {
+  height: 30vh;
+  width: 100%;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 40vh;
+  background-color: #111111;
+}
+.footer-container {
+  max-width: 1500px;
+  width: 95%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.upper-footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 20px;
+  padding-top: 30px;
+  height: 90%;
+}
+.footer-links {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 10px;
+  flex: 0.7;
+}
+.footer-links div ul {
+  list-style: none;
+}
+.footer-links div ul li {
+  padding: 4px;
+}
+.footer-links div:nth-child(2) ul li,
+.footer-links div:nth-child(3) ul li {
+  padding: 8px;
+}
+.footer-links div ul li a {
+  color: rgb(182, 179, 179);
+  text-decoration: none;
+}
+.footer-links div ul li {
+  font-weight: 400;
+  color: rgb(182, 179, 179);
+}
+.footer-links div:nth-child(1) ul li a,
+.footer-links div ul li:nth-child(1) a {
+  color: white;
+  font-weight: 800;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.footer-links div ul li a:hover {
+  color: white;
+}
+
+.social-icons ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.social-icons ul li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 254, 254, 0.589);
+  /*  */
+  margin: 10px;
+}
+.social-icons ul li:hover {
+  background-color: white;
+}
+/* .social-icons ul li a {
+        color: white;
+      } */
+.social-icons ul li a img {
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+  border: none;
+}
+.lower-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  padding-top: 20px;
+}
+.cpright-col {
+  display: flex;
+  margin-top: 20px;
+}
+.cpright-col div i {
+  color: gray;
+  cursor: pointer;
+}
+.cpright-col div span {
+  color: gray;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.about-links ul {
+  display: flex;
+}
+.about-links ul li {
+  padding: 20px;
+  font-weight: 300;
+  font-size: 13px;
+}
+.about-links ul li a {
+  color: rgb(165, 164, 164);
+  text-decoration: none;
+}
+.about-links ul li a:hover {
+  color: white;
+}
+.last {
+  height: 3vh;
+  width: 100%;
+}
+@media screen and (min-width: 580px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1150px) {
+  #search-icon,
+  #icon-div {
+    display: none;
+  }
+  #menu-items {
+    display: none;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #top-bar-container {
+    display: none;
+  }
+  #nav-bar {
+    display: none;
+  }
+  #nav-search {
+    display: flex;
+    justify-content: flex-end;
+  }
+  #nav-search > div {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #search-bar,
+  #fav-icon {
+    display: none;
+  }
+  #menu-items {
+    position: fixed;
+    width: 400px;
+    background-color: white;
+    height: 100vh;
+    top: 0;
+    right: 0px;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow: scroll;
+    transition: all ease-in-out;
+    transition-duration: 0.4s;
+  }
+  #menu-items > div:nth-child(1) {
+    display: inline-block;
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: 90%;
+  }
+  #menu-items > div:nth-child(1) img {
+    width: 20px;
+    height: auto;
+  }
+  #menu-items ul {
+    list-style: none;
+  }
+  #menu-items ul li {
+    font-size: 25px;
+    padding-top: 30px;
+  }
+  #menu-items a {
+    color: #111111;
+  }
+  #menu-items > div {
+    margin-top: 60px;
+  }
+  #menu-items > div span {
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 20px;
+    vertical-align: middle;
+  }
+
+  #menu-items ul li span a img {
+    width: 20px;
+    height: auto;
+  }
+  #menu-items ul li span:nth-child(2) {
+    float: right;
+  }
+  #menu-items ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  .menu-signup {
+    margin-top: 60px;
+  }
+  .menu-signup p {
+    font-size: 24px;
+    color: gray;
+  }
+  .menu-signup p span {
+    color: #111111;
+    font-size: 24px;
+    padding: 0;
+  }
+  .menu-signup div {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu-signup div button {
+    width: 150px;
+    height: 50px;
+    border-radius: 28px;
+    background-color: #111111;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+  }
+  .menu-signup div button:nth-child(2) {
+    background-color: white;
+    color: black;
+  }
+  .other-opt {
+    padding-top: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-around;
+  }
+  .other-opt div span {
+    font-size: 20px;
+  }
+  #nav-details img {
+    width: 30px;
+    height: auto;
+  }
+  #nav-logo a img {
+    width: 60px;
+    height: auto;
+  }
+  #nav-bar ul li {
+    padding: 15px;
+    font-size: 16px;
+  }
+  .ads p {
+    font-size: 12px;
+  }
+  #men-page-navbar div {
+    width: 25vw;
+  }
+  #men-page-navbar div h1 {
+    font-size: 20px;
+  }
+
+  .latest-box {
+    height: fit-content;
+    box-sizing: border-box;
+    margin-top: 50px;
+  }
+  .latest-box > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+  .latest-box > div > div h3 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .latest-box > div > div {
+    height: 600px;
+    padding-left: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .latest-box {
+    height: fit-content;
+  }
+  .latest-box > div {
+    grid-template-columns: auto;
+    grid-template-rows: 0.4fr 0.4fr;
+    grid-template-areas:
+      "a"
+      "b";
+  }
+  .latest-box > div > div:nth-child(1) {
+    grid-area: "a";
+  }
+  .latest-box > div > div:nth-child(2) {
+    grid-area: "b";
+  }
+  .box div h1 {
+    font-size: 2rem;
+  }
+  .cat-box {
+    display: grid;
+    height: 450px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+  .catgory div {
+    width: 25%;
+    position: relative;
+    top: 380px;
+    left: 20px;
+    margin: 0;
+  }
+  .catgory div button {
+    background-color: white;
+    color: black;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #footwear-section {
+    margin-bottom: 0px;
+  }
+  .box div h1 {
+    font-size: 1.5rem;
+  }
+  .box div button {
+    width: 110px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    border: none;
+    margin-top: 0px;
+  }
+  .box3 > div p {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+  .latest-box > div > div {
+    height: 520px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+  }
+  .latest-box > div > div h3 {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+  }
+  .latest-box > div > div:nth-child(2) h3 {
+    color: white;
+  }
+  .latest-box > div > div button {
+    margin-top: 12px;
+    height: 45px;
+    width: 110px;
+    padding: 0px;
+    border-radius: 25px;
+    border: none;
+  }
+  .latest-box > div > div button a {
+    font-size: 17px;
+  }
+  .box3 h1 {
+    font-size: 22px;
+  }
+  .box div p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  .extra div {
+    text-align: left;
+  }
+  .ads p {
+    font-size: 10px;
+  }
+  .cat-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1400px;
+    width: 100%;
+  }
+  #morenike {
+    font-size: 1.5rem;
+  }
+  .catgory div button {
+    width: 160px;
+  }
+  footer {
+    height: fit-content;
+  }
+  .upper-footer {
+    grid-template-columns: auto;
+  }
+  .footer-links {
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 30px;
+    flex: 0.7;
+  }
+  .social-icons ul {
+    justify-content: flex-start;
+    margin: 20px 0px;
+  }
+  .social-icons ul li {
+    padding: 20px;
+  }
+  .footer-links > div + div {
+    padding-top: 20px;
+    border-top: 1px solid rgba(128, 128, 128, 0.637);
+  }
+
+  .footer-links > div:nth-child(1) {
+    margin-top: 30px;
+  }
+  .footer-links div ul li {
+    padding: 8px;
+  }
+  .lower-footer {
+    flex-direction: column;
+    border: none;
+  }
+  .cpright-col {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cpright-col div i {
+    color: white;
+  }
+  .cpright-col div span {
+    color: white;
+    padding-right: 25px;
+  }
+  .about-links ul {
+    flex-direction: column;
+  }
+  .about-links ul li {
+    padding-left: 0px;
+  }
+}

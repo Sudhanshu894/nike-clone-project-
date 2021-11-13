@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/ea5026738a.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      div {
+        width: 30%;
+        height: 450px;
+        border: solid 1px;
+        text-align: center;
+        font-family: "Roboto Condensed", sans-serif;
+        color: gray;
+        margin: auto;
+        margin-top: 100px;
+        font-size: 17px;
+      }
+      h1 {
+        font-weight: normal;
+        color: black;
+        font-size: 23px;
+      }
+      #email,
+      #pass,
+      #pass2 {
+        width: 70%;
+        height: 35px;
+        padding: 12px;
+        box-sizing: border-box;
+        font-size: 15px;
+      }
+      span {
+        text-decoration: underline;
+      }
+      button {
+        width: 70%;
+        height: 35px;
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        border: 0;
+        border-radius: 4px;
+        margin-top: 5px;
+      }
+      i {
+        font-size: 45px;
+        color: black;
+      }
+      @media screen and (max-width: 800px) {
+        div {
+          height: 500px;
+        }
+      }
+      #img {
+        width: 65px;
+        height: 50px;
+        margin-top: 1px;
+        border: 0;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="img">
+        <a href="home.html"
+          ><img
+            src="https://static.nike.com/a/images/f_jpg,q_auto:eco/61b4738b-e1e1-4786-8f6c-26aa0008e80b/swoosh-logo-black.png"
+        /></a>
+      </div>
+      <h1>RESET PASSWORD</h1>
+      <br /><br />
+      Enter your email to receive instructions on how to <br />reset your
+      password.<br /><br />
+      <input type="email" id="email" placeholder="Email Address" /><br /><br />
+      <section></section>
+      <button id="reset">RESET</button><br /><br />
+      Or return to<a href="Signin.html" style="color: black">Log In</a>
+    </div>
+  </body>
+</html>
+<script>
+  var alldata = JSON.parse(localStorage.getItem("UserInfo"));
+  document.getElementById("reset").addEventListener("click", function () {
+    var count = 0;
+    alldata.map(function (item) {
+      var email = document.getElementById("email").value;
+      if (item.Email == email) {
+        count++;
+      }
+    });
+    if (count == 0) {
+      alert("Email Incorrect");
+    } else {
+      var input = document.createElement("input");
+      input.setAttribute("type", "Password");
+      input.setAttribute("id", "pass");
+      input.setAttribute("placeholder", "New Password");
+      var input2 = document.createElement("input");
+      input2.setAttribute("type", "Password");
+      input2.setAttribute("id", "pass2");
+      input2.setAttribute("placeholder", "Confirm Password");
+      var button = document.createElement("button");
+      button.setAttribute("id", "confirm");
+      button.textContent = "Confirm Password";
+      var sec = document.querySelector("section");
+      sec.append(input, input2, button);
+
+      document.getElementById("confirm").addEventListener("click", function () {
+        var pass1 = document.getElementById("pass").value;
+        var pass2 = document.getElementById("pass2").value;
+        if (pass1.length < 8) {
+          alert("Enter Strong Password");
+        } else if (pass1 !== pass2) {
+          alert("Password Do Not Match");
+        } else {
+          alert("Password Updated Please SignIn");
+          var alldata = [];
+          var email = document.getElementById("email").value;
+          var data = {
+            Email: email,
+            Pass: pass1,
+          };
+          alldata.push(data);
+          localStorage.setItem("UserInfo", JSON.stringify(alldata));
+          window.location.href = "Signin.html";
+        }
+      });
+    }
+  });
+</script>

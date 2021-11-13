@@ -1,0 +1,156 @@
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/ea5026738a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div>
+        <a href="home.html"><img src="image resources/nike.png" alt="" /></a>
+      </div>
+      <div>
+        <a href="checkout.html"><span>Go Back</span></a>
+        <a href="Addtocart.html"
+          ><span><i class="fas fa-shopping-cart"></i></span
+        ></a>
+      </div>
+    </div>
+
+    <h1>Payment Details</h1>
+    <h2 id="bill"></h2>
+    <div id="form-form">
+      <form id="form">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGNe9OUkbGe_6DSQ9dCdgfIGoI-87jdcmyLg&usqp=CAU"
+          alt=""
+        />
+        <br /><br /><label for="">CARD NUMBER</label><br />
+        <input
+          type="number"
+          id="card"
+          placeholder="Valid Card Number"
+        /><br /><br />
+        <label>EXPIRATION DATE</label><br />
+        <input type="text" placeholder="MM/YY" id="date" /><br /><br />
+        <label>CVV CODE</label><br />
+        <input type="number" id="cvv" placeholder="CVV" /><br /><br />
+        <label for="">CARD OWNER</label><br /><input
+          type="text"
+          placeholder="CARD OWNER NAME"
+          id="owner"
+        /><br /><br />
+        <button>Confirm Payment</button>
+      </form>
+    </div>
+    ​
+    <!--  -->
+    <footer>
+      <div class="footer-container">
+        <div class="upper-footer">
+          <div class="footer-links">
+            <div>
+              <ul>
+                <li><a href="#">FIND A STORE</a></li>
+                <li><a href="#">BECOME A MEMBER</a></li>
+                <li><a href="#">SIGN UP FOR EMAIL</a></li>
+                <li><a href="#">STUDENT DISCOUNTS</a></li>
+                <li><a href="#">SEND US FEEDBACK</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="#">GET HELP</a></li>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Payment Options</a></li>
+                <li><a href="#">Contact Us On Nike.com Inquiries</a></li>
+                <li><a href="#">Contact Us On All Other Inquiries</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="#">ABOUT NIKE</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Sustainability</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="social-icons">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="image resources/facebook-logo.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"><img src="image resources/twitter.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="image resources/youtube-logo.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="image resources/instagram.png" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="lower-footer">
+          <div class="cpright-col">
+            <div>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>India</span>
+            </div>
+            <div>
+              <span>© 2021 Nike, Inc. All Rights Reserved</span>
+            </div>
+          </div>
+          <div class="about-links">
+            <ul>
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">Terms of Sales</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">New Privacy policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="last"></div>
+    ​ ​
+  </body>
+</html>
+<script>
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var card = form.card.value;
+    var cvv = form.cvv.value;
+    var owner = form.owner.value;
+    var date = form.date.value;
+    if (card.length < 16 || card.length > 16) {
+      alert("Enter Valid Card Number");
+    } else if (cvv.length < 3) {
+      alert("Enter CVV");
+    } else if (owner.length < 4) {
+      alert("Enter Your Name");
+    } else if (date.length == 0) {
+      alert("Enter Expiration Date");
+    } else {
+      alert("Payment Successfull");
+      setTimeout(myFunction, 3000);
+      function myFunction() {
+        alert("Thanks for Purchasing");
+        window.location.href = "Salespage.html";
+      }
+    }
+  });
+  var total = localStorage.getItem("total");
+  document.getElementById(
+    "bill"
+  ).textContent = `The Total Amount to be deducted is ₹${total}`;
+</script>
