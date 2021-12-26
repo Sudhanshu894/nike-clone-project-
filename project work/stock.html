@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Upcoming page</title>
+    <title>Stock page</title>
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <!-- stylesheet -->
-    <link rel="stylesheet" href="upcoming.css" />
+    <link rel="stylesheet" href="styles/stock.css" />
   </head>
   <body>
     <!-- top bar -->
@@ -24,10 +24,10 @@
       </div>
       <div id="top2">
         <ul>
-          <li><a href="Joinus.html">Join/login</a></li>
-          <li><a href="help.html">Help</a></li>
+          <li><a href="#">Join/login</a></li>
+          <li><a href="#">Help</a></li>
           <li>
-            <a href="Addtocart.html"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
           </li>
           <li>
             <a href="#"
@@ -843,42 +843,9 @@
     products.map(function (items) {
       var itemdiv = document.createElement("div");
       itemdiv.setAttribute("class", "itemdiv");
-      var date = document.createElement("div");
-      date.setAttribute("class", "date");
-      var month = [
-        "jan",
-        "feb",
-        "Mar",
-        "Apr",
-        "May",
-        "June",
-        "July",
-        "Aug",
-        "Sept",
-        "Oct",
-        "Nov",
-        "Dec",
-      ];
-      var currdate = new Date();
-      var monthspan = document.createElement("span");
-      monthspan.textContent = month[currdate.getMonth()];
-      var br = document.createElement("br");
-      var day = document.createElement("span");
-      day.textContent = currdate.getDate() + 2;
-      date.append(monthspan, br, day);
-
       var img = document.createElement("img");
       img.setAttribute("src", items.image_url);
-      var contentdiv = document.createElement("div");
-      contentdiv.setAttribute("class", "contentdiv");
-      var name = document.createElement("h1");
-      name.textContent = items.name;
-      var brand = document.createElement("h3");
-      brand.textContent = items.brand;
-      var button = document.createElement("button");
-      button.textContent = "Buy";
-      contentdiv.append(name, brand);
-      itemdiv.append(date, img, contentdiv, button);
+      itemdiv.append(img);
       maindiv.append(itemdiv);
     });
   }

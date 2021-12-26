@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Men's Page</title>
+    <title>Nike-favourite Page</title>
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- google fonts -->
@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
     <!-- stylesheet -->
-    <link rel="stylesheet" href="Men.css" />
+    <link rel="stylesheet" href="styles/favpage.css" />
   </head>
   <body>
     <div class="container">
@@ -71,11 +71,13 @@
             </div>
             <div id="fav-icon">
               <a href="favpage.html"><img src="image resources/love.png" alt="" /></a>
+              <span id="FAV"></span>
             </div>
             <div id="cart-icon">
               <a href="Addtocart.html"
                 ><img src="image resources/shopping-bag.png" alt=""
               /></a>
+              <span id="CArt"></span>
             </div>
             <div id="search-icon">
               <a href="#">
@@ -125,8 +127,8 @@
             <div class="menu-signup">
               <p>Become a Nike Member for the best products, inspiration and stories in sports. <span>Learn more</span></p>
               <div>
-              <a href="JoinusPage.html"><button>Join Us</button></a>
-              <a href="Signin.html"><button>Sign In</button></a>
+                <a href="JoinusPage.html"><button>Join Us</button></a>
+                <a href="Signin.html"><button>Sign In</button></a>
               </div>
             </div>
             <div class="other-opt">
@@ -152,131 +154,14 @@
           </div>
         </div>
       </nav>
-
-      
-      <div class="ads">
-        <p>FREE DELIVERY</p>
-        <p>Applies to orders of ₹14,000 or more.<span> View details</span></p>
-      </div>
-
-      <!-- Men's page product Category items -->
-      <div id="men-page-navbar">
+    <!-- Men's page product Category items -->
+    <div id="men-page-navbar">
         <div>
-          <h1>Men</h1>
+          <h1>Favorites</h1>
         </div>
-        <div>
-          <ul>
-            <li><a href="shoes.html">Shoes</a></li>
-            <li><a href="clothing.html">Clothing</a></li>
-            <li><a href="gear.html">Gear</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Main content -->
-
-      <div class="main-container">
-        <div class="box extra">
-          <img
-            src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1753,c_limit/73f28177-9d4d-481e-acb5-c25227b3fca7/men-s-shoes-clothing-accessories.png"
-            alt=""
-          />
-          <div>
-            <h1>FIND YOUR FAST</h1>
-            <p>
-              Introducing the Nike Air Zoom Pegasus 38 FlyEase with innovative quick &amp; easy entry.
-            </p>
-          </div>
-          <div>
-            <button><a href="#">Shop</a></button>
-          </div>
-        </div>
-
-        <!-- Featured Footwear -->
-        <div class="latest-box">
-          <h1>Featured Footwear</h1>
-          <div>
-            <div>
-              <h3>Air Force-1</h3>
-              <button><a href="#">Shop</a></button>
-            </div>
-            <div>
-              <h3>Shoes Under Rs. 7,500</h3>
-              <button><a href="#">Shop</a></button>
-            </div>
-          </div>
-        </div>
-
-        <!-- New Arrivals -->
-        <div id="footwear-section">
-          <div>
-            <div>
-              <h1>
-                New Arrivals
-              </h1>
-            </div>
-            <div>
-              <div id="rightarrow"><i class="fas fa-chevron-left"></i></div>
-              <div id="leftarrow"><i class="fas fa-chevron-right"></i></div>
-            </div>
-          </div>
-          <div class="slider-div">
-            <div id="shoes-slider"></div>
-          </div>
-        </div>
-        <!-- The Latest -->
-        <div class="box box3" id="latest">
-          <h1>The Latest</h1>
-          <div>
-            <div>
-              <h1>JORDAN APPAREL</h1>
-              <Button><a href="#">Shop</a></Button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Trending -->
-        <div class="box box3 yoga-box">
-          <h1>Trending</h1>
-          <img
-            src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1753,c_limit/d9133135-aaa5-4510-a812-0fbdd64b928b/men-s-shoes-clothing-accessories.jpg"
-            alt=""
-          />
-          <div>
-            <h1>NIKE YOGA</h1>
-            <p>Destress with our latest yoga collection.</p>
-          </div>
-          <div>
-            <a href="#"><button>Shop</button></a>
-          </div>
-        </div>
-
-        <!-- More Nike -->
-        <div>
-          <h3 id="morenike">More Nike</h3>
-          <div class="cat-box">
-            <div class="catgory">
-              <div>
-                <button>Top & T-Shirts</button>
-              </div>
-            </div>
-            <div class="catgory">
-              <div>
-                <button>Shorts</button>
-              </div>
-            </div>
-            <div class="catgory">
-              <div>
-                <button>Pants & Leggings</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-
-
-        <div class="space"></div>
-      </div>
+    </div>  
+    <div id="container"></div>
+  <div class="space"></div>
 
       <!-- footer -->
       <footer>
@@ -343,11 +228,74 @@
           </div>
         </div>
       </footer>
-
-      <!-- last space -->
-      <div class="last"></div>
     </div>
   </body>
 </html>
-<script src="Men.js"></script>
+<script>
+  var menu = document.getElementById("menu-items")
+document.getElementById("menu-bar-icon").addEventListener("click",function(){
+  menu.style.right = "0px";
+})
+document.getElementById("close-menu").addEventListener("click",function(){
+  menu.style.right = "-400px";
+})
 
+var search = document.querySelector("#search-bar");
+var Cross = document.querySelector("#cross-btn")
+var topbar = document.querySelector("#top-bar-container");
+function expand(){
+    search.classList.add('expand');
+    // search.style.width = "73vw"
+    Cross.style.display = "block";
+    topbar.style.height = "0vh";
+    topbar.style.transition = "0.3s ease-in-out";
+    
+}
+function cross(){
+    search.classList.remove('expand');
+    // search.style.width = "initial";
+    Cross.style.display = "none";
+    topbar.style.height = "4vh";
+    topbar.style.transition = "0.3s ease-in-out";
+}
+  var products = JSON.parse(localStorage.getItem("Favorites")) || [];
+  var maindiv = document.getElementById("container");
+  displaygallery(products);
+  function displaygallery(products) {
+    products.map(function (items,index) {
+      var itemdiv = document.createElement("div");
+      itemdiv.setAttribute("class", "itemdiv");
+      var span = document.createElement("span");
+      span.setAttribute("class","rmicon");
+      span.textContent = "X"
+      var img = document.createElement("img");
+      img.setAttribute("src", items.image_url);
+      var contentdiv = document.createElement("div");
+      contentdiv.setAttribute("class", "contentdiv");
+      var name = document.createElement("h1");
+      name.textContent = items.name;
+      var brand = document.createElement("h3");
+      brand.textContent = items.brand;
+      var button = document.createElement("button");
+      button.textContent = "Buy";
+      contentdiv.append(name, brand);
+      itemdiv.append(span,img, contentdiv, button);
+      maindiv.append(itemdiv);
+
+      span.addEventListener("click",function (index){
+        products.splice(index,1);
+    localStorage.setItem('Favorites',JSON.stringify(products))
+    displaygallery(products)
+    location.reload();
+      })
+    });
+  }
+  var addtocart=JSON.parse(localStorage.getItem('ADDToCard'))
+  addtocart.map(function(item,i){
+    document.getElementById('CArt').textContent=i+1;
+  })
+  var favorites = JSON.parse(localStorage.getItem('Favorites'))
+  favorites.map(function(item,i){
+      document.getElementById("FAV").textContent=i+1
+  })
+</script>
