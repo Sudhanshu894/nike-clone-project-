@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Men's Page</title>
+    <!-- aos cdn link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- google fonts -->
@@ -176,7 +178,7 @@
       <!-- Main content -->
 
       <div class="main-container">
-        <div class="box extra">
+        <div class="box extra" data-aos="zoom-in-up">
           <img
             src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1753,c_limit/73f28177-9d4d-481e-acb5-c25227b3fca7/men-s-shoes-clothing-accessories.png"
             alt=""
@@ -193,7 +195,7 @@
         </div>
 
         <!-- Featured Footwear -->
-        <div class="latest-box">
+        <div class="latest-box" data-aos="zoom-in-up">
           <h1>Featured Footwear</h1>
           <div>
             <div>
@@ -208,7 +210,7 @@
         </div>
 
         <!-- New Arrivals -->
-        <div id="footwear-section">
+        <div id="footwear-section" data-aos="zoom-in-up">
           <div>
             <div>
               <h1>
@@ -225,7 +227,7 @@
           </div>
         </div>
         <!-- The Latest -->
-        <div class="box box3" id="latest">
+        <div class="box box3" id="latest" data-aos="zoom-in-up">
           <h1>The Latest</h1>
           <div>
             <div>
@@ -236,7 +238,7 @@
         </div>
 
         <!-- Trending -->
-        <div class="box box3 yoga-box">
+        <div class="box box3 yoga-box" data-aos="zoom-in-up">
           <h1>Trending</h1>
           <img
             src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1753,c_limit/d9133135-aaa5-4510-a812-0fbdd64b928b/men-s-shoes-clothing-accessories.jpg"
@@ -252,7 +254,7 @@
         </div>
 
         <!-- More Nike -->
-        <div>
+        <div data-aos="zoom-in-up">
           <h3 id="morenike">More Nike</h3>
           <div class="cat-box">
             <div class="catgory">
@@ -279,7 +281,7 @@
       </div>
 
       <!-- footer -->
-      <footer>
+      <footer data-aos="zoom-in-up">
         <div class="footer-container">
           <div class="upper-footer">
             <div class="footer-links">
@@ -350,4 +352,10 @@
   </body>
 </html>
 <script src="scripts/Men.js"></script>
-
+<!-- aos script  -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    delay: 1,
+  });
+</script>
