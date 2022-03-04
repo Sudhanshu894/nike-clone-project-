@@ -12,7 +12,7 @@
 - `JavaScript`
 ---
 - **Home Page**
-![Landing Page](https://github.com/mayuriwasu1/Data-Structures-and-Algorithms/blob/main/nike/imgs/nike.png)
+![Landing Page](https://github.com/Sudhanshu894/nike-clone-project-/tree/main/project-work/image%20resources/nikeHome.png.png)
 ---
 - **Sign-Up Page**
 ![Sign Up Page](https://github.com/mayuriwasu1/Data-Structures-and-Algorithms/blob/main/nike/imgs/Screenshot%20(27).png)
