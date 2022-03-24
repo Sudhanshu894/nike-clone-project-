@@ -2,7 +2,7 @@
 
 <h3>This is a team project where we worked on cloning the nike website. Here users can book buy products. We have built this using HTML, CSS, and JavaScript.</h3>
 <br/>
-<a href="https://nike-clone-unit2.netlify.app/">Demo Link</a>
+<a href="https://nike-clone-unit2.netlify.app/" target="_blank">Demo Link</a>
 <h2>Home Page</h2>
 <img src="https://i.postimg.cc/nzNBSy9x/nike-Home-png.png" hight="300px" width="500px">
 <br/>
